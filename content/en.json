@@ -1,0 +1,102 @@
+{
+  "pages": {
+    "home": { "slug": "", "label": "Home", "title": "Evans Moris Cheahn | Technology Entrepreneur & Business Leader", "description": "Meet Evans Moris Cheahn, founder of Sliva Technology Indonesia, CEO of Aracita Group, SlivaDoc and ZÉRA, and CTO of PT Yuk Inovasi Digital." },
+    "journey": { "slug": "journey", "label": "Journey", "title": "Evans Moris Cheahn’s Career | From IT Support to CEO", "description": "Follow Evans Moris Cheahn’s career from IT support in 2017 to founding Sliva Technology Indonesia and leading companies as CEO and CTO." },
+    "ventures": { "slug": "ventures", "label": "Ventures", "title": "Ventures & Leadership | Evans Moris Cheahn", "description": "Explore Evans Moris Cheahn’s leadership roles at Sliva Technology Indonesia, SlivaDoc, Aracita Group, ZÉRA and PT Yuk Inovasi Digital." },
+    "media": { "slug": "media", "label": "Media", "title": "Media, Speaking & Recognition | Evans Moris Cheahn", "description": "Explore Evans Moris Cheahn’s appearances at WebDevTalk, Exabytes Developer Club and FKK News, and his 2022 Forum Digital BUMN award." },
+    "contact": { "slug": "contact", "label": "Contact", "title": "Business & Collaboration Inquiries | Evans Moris Cheahn", "description": "Connect with Evans Moris Cheahn on LinkedIn for business partnerships, digital product collaboration and speaking invitations." }
+  },
+  "ui": {
+    "profile": "Executive profile", "location": "Jakarta, Indonesia", "navigation": "Main navigation", "languages": "Languages", "skip": "Skip to content", "source": "View source", "next": "Explore next", "credit": "Photo: Exabytes · WebDevTalk 2023", "portraitAlt": "Portrait of Evans Moris Cheahn in a black blazer", "socialAlt": "Evans Moris Cheahn — Executive Profile", "linkedin": "Connect on LinkedIn", "footer": "Technology entrepreneur & business leader", "top": "Back to top"
+  },
+  "home": {
+    "role": "Technology entrepreneur & business leader.",
+    "intro": "I started my career in IT support. Today, I build companies and lead teams that develop digital products around real business needs.",
+    "primary": "Explore my journey", "secondary": "Discuss a collaboration",
+    "rolesLabel": "CURRENT ROLES",
+    "focusLabel": "01 / HOW I WORK",
+    "focusTitle": "Turning market opportunities into useful products.",
+    "focusIntro": "Working directly with users shaped how I make business decisions: understand what customers need, set priorities, then build with the team.",
+    "focus": [
+      { "title": "Business strategy", "text": "Understand the market and its customers before deciding which opportunities to pursue." },
+      { "title": "Product development", "text": "Turn real needs into products and workflows that are easier to use." },
+      { "title": "Team leadership", "text": "Align business, product, and technology priorities so teams can move in the same direction." }
+    ],
+    "careerLabel": "02 / CAREER JOURNEY",
+    "careerTitle": "From getting started to leading teams.",
+    "careerLink": "Read the full story",
+    "milestones": [
+      { "year": "2017", "title": "Starting on the front line", "text": "Began my career as an IT support technician in Batam." },
+      { "year": "2022", "title": "Founding Sliva", "text": "Founded PT Sliva Technology Indonesia and stepped into the CEO role." },
+      { "year": "2026", "title": "Expanding my leadership roles", "text": "Became CEO of Aracita Group and ZÉRA, and CTO of PT Yuk Inovasi Digital." }
+    ],
+    "featureLabel": "03 / PUBLIC HIGHLIGHT",
+    "featureTitle": "A conversation about the future of the internet.",
+    "featureText": "At Indonesia Website Awards & WebDevTalk 2023, I spoke about how Web3 could change the way businesses and users interact online.",
+    "featureLink": "Explore media & events"
+  },
+  "journey": {
+    "label": "01 / CAREER JOURNEY",
+    "heading": "From the front line to leadership.",
+    "intro": "My career began with solving technical problems for users and grew into leading companies and teams. Each step broadened how I think about business problems.",
+    "entries": [
+      { "period": "2017–2018", "title": "Starting in IT support", "organization": "IT STORE COM · Batam", "text": "I began as a technician diagnosing and repairing computers and printers. It taught me to listen to users and find the root cause of a problem.", "source": "profile" },
+      { "period": "2020–2022", "title": "Building digital products", "organization": "DQLab · Sliva IT · Pintaar · DumbWays", "text": "I moved into data analysis and digital product development, learning how teams take a user need and turn it into something people can use.", "source": "profile" },
+      { "period": "2022", "title": "Founding Sliva Technology Indonesia", "organization": "Founder & CEO · PT Sliva Technology Indonesia", "text": "Founding Sliva shifted my responsibilities from building products to setting the direction of a company. That year, Universitas Muhammadiyah Riau also recorded my national first-place award at Forum Digital BUMN.", "source": "umri" },
+      { "period": "2023", "title": "Developing SlivaDoc and speaking publicly", "organization": "SlivaDoc · Indonesia Website Awards & WebDevTalk", "text": "I became CEO of SlivaDoc, with a focus on digitizing animal health services. At WebDevTalk, I spoke about Web3 and the future of the internet.", "source": "iwa" },
+      { "period": "2023–2026", "title": "Leading technology across industries", "organization": "Indo Teknik · MSIG Life · GMS Church · Lion Parcel", "text": "As Head of Technology at Indo Teknik, I worked on project planning, team coordination, and product development. My work at MSIG Life, GMS Church, and Lion Parcel broadened my experience in insurance, community organizations, and logistics.", "source": "profile" },
+      { "period": "2026", "title": "Taking on new executive roles", "organization": "ZÉRA · Aracita Group · PT Yuk Inovasi Digital", "text": "I took on CEO roles at ZÉRA and Aracita Group and the CTO role at PT Yuk Inovasi Digital while continuing to lead Sliva and SlivaDoc.", "source": "profile" }
+    ]
+  },
+  "ventures": {
+    "label": "02 / VENTURES & LEADERSHIP",
+    "heading": "The companies and teams I lead.",
+    "intro": "My work spans company building, product development, and aligning technology decisions with business needs.",
+    "current": "Current roles",
+    "entries": [
+      { "name": "Sliva Technology Indonesia", "mark": "S", "role": "Founder & CEO", "period": "Since March 2022", "field": "Technology business", "text": "I founded PT Sliva Technology Indonesia to develop digital solutions around business needs. As CEO, I lead the company’s direction and product development.", "source": "sliva" },
+      { "name": "SlivaDoc", "mark": "Sd", "role": "CEO", "period": "Since January 2023", "field": "Animal health technology", "text": "SlivaDoc helps veterinary clinics and pet shops digitize their operations, from animal health records to day-to-day service workflows.", "source": "slivadoc" },
+      { "name": "Aracita Group", "mark": "A", "role": "CEO", "period": "Since April 2026", "field": "Events & creative industries", "text": "Aracita plans, coordinates, and produces events, from corporate programs and brand activations to weddings.", "source": "aracita" },
+      { "name": "ZÉRA", "mark": "Z", "role": "CEO", "period": "Since March 2026", "field": "Business leadership", "text": "I serve as CEO of ZÉRA, one of the business leadership roles I took on in 2026.", "source": "profile" },
+      { "name": "PT Yuk Inovasi Digital", "mark": "Y", "role": "CTO", "period": "Since June 2026", "field": "Technology leadership", "text": "As CTO, I focus on the company’s technology direction and how it serves business needs.", "source": "profile" }
+    ],
+    "workLabel": "CROSS-INDUSTRY EXPERIENCE",
+    "workTitle": "The business contexts that shaped my approach.",
+    "work": [
+      { "name": "Indo Teknik", "field": "Manufacturing & commerce", "text": "Led technology and platform development for a diesel parts marketplace.", "source": "work" },
+      { "name": "MSIG Life", "field": "Insurance", "text": "Contributed to interface design and development for digital insurance products.", "source": "profile" },
+      { "name": "Lion Parcel", "field": "Logistics", "text": "Contributed to the development of the Lion Parcel delivery platform.", "source": "work" }
+    ]
+  },
+  "media": {
+    "label": "03 / MEDIA & SPEAKING",
+    "heading": "Events, coverage, and recognition.",
+    "intro": "A public record of my contributions to conversations about technology, the creative industries, and digital talent in Indonesia.",
+    "feature": {
+      "tag": "SPEAKER · 1 MARCH 2023",
+      "title": "Indonesia Website Awards & WebDevTalk 2023",
+      "text": "I spoke about Web3 and how it could shape the future of the internet. Kominfo’s press release gives context for the ministry’s message about the need for digital talent at the event.",
+      "primary": "Official Exabytes agenda", "secondary": "Kominfo release on Komdigi"
+    },
+    "listTitle": "More highlights",
+    "entries": [
+      { "date": "April 2023", "publisher": "FKK News", "tag": "Coverage", "title": "Blockchain and the future of the creative industries", "text": "FKK News introduced me as a guest speaker in a discussion about using blockchain in the creative industries.", "source": "fkk" },
+      { "date": "August 2022", "publisher": "Exabytes Developer Club", "tag": "Speaker", "title": "Web3 decentralization and the future of the internet", "text": "An Exabytes community session on decentralization and how Web3 could change the way the internet works.", "source": "edc" },
+      { "date": "2022", "publisher": "Universitas Muhammadiyah Riau", "tag": "Award", "title": "First place at Forum Digital BUMN", "text": "Universitas Muhammadiyah Riau recorded the award in its list of national student achievements.", "source": "umri" }
+    ]
+  },
+  "contact": {
+    "label": "04 / CONTACT",
+    "heading": "Let’s start a conversation.",
+    "intro": "I’m open to conversations with business leaders, product teams, and event organizers interested in working together.",
+    "channel": "Professional contact", "channelText": "Send a LinkedIn message with a brief introduction to your organization, the opportunity you’d like to discuss, and what you hope to accomplish.",
+    "topicsTitle": "Ways to collaborate",
+    "topics": [
+      { "title": "Business partnerships", "text": "Explore opportunities across industries and where working together could benefit both sides." },
+      { "title": "Products & digital transformation", "text": "Discuss customer needs, product priorities, and the role of technology in operations." },
+      { "title": "Events & media", "text": "Invite me to speak about entrepreneurship, technology leadership, or Indonesia’s digital ecosystem." }
+    ]
+  },
+  "cta": { "label": "COLLABORATION", "title": "Have an opportunity to discuss?", "text": "Let’s talk about partnerships, product development, or speaking invitations.", "link": "Start a conversation" },
+  "missing": { "title": "Page not found", "text": "This page may have moved. Return to the homepage to continue." }
+}

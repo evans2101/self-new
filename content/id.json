@@ -1,0 +1,102 @@
+{
+  "pages": {
+    "home": { "slug": "", "label": "Beranda", "title": "Evans Moris Cheahn | Pengusaha Teknologi & Pemimpin Bisnis", "description": "Profil Evans Moris Cheahn, pendiri Sliva Technology Indonesia, CEO Aracita Group, SlivaDoc dan ZÉRA, serta CTO PT Yuk Inovasi Digital." },
+    "journey": { "slug": "karier", "label": "Karier", "title": "Perjalanan Karier Evans Moris Cheahn | Dari IT Support ke CEO", "description": "Perjalanan Evans Moris Cheahn sejak bekerja di IT support pada 2017, mendirikan Sliva Technology Indonesia, hingga memimpin bisnis sebagai CEO dan CTO." },
+    "ventures": { "slug": "bisnis", "label": "Bisnis", "title": "Bisnis & Kepemimpinan | Evans Moris Cheahn", "description": "Peran Evans Moris Cheahn di Sliva Technology Indonesia, SlivaDoc, Aracita Group, ZÉRA, dan PT Yuk Inovasi Digital." },
+    "media": { "slug": "media", "label": "Media", "title": "Media, Pembicara & Penghargaan | Evans Moris Cheahn", "description": "Penampilan Evans Moris Cheahn di WebDevTalk, Exabytes Developer Club, dan FKK News, serta penghargaan Forum Digital BUMN 2022." },
+    "contact": { "slug": "kontak", "label": "Kontak", "title": "Kontak Bisnis & Kolaborasi | Evans Moris Cheahn", "description": "Hubungi Evans Moris Cheahn melalui LinkedIn untuk kemitraan bisnis, kolaborasi produk digital, dan undangan sebagai pembicara." }
+  },
+  "ui": {
+    "profile": "Profil eksekutif", "location": "Jakarta, Indonesia", "navigation": "Navigasi utama", "languages": "Pilihan bahasa", "skip": "Lewati ke konten", "source": "Lihat sumber", "next": "Jelajahi berikutnya", "credit": "Foto: Exabytes · WebDevTalk 2023", "portraitAlt": "Potret Evans Moris Cheahn dengan jas hitam", "socialAlt": "Evans Moris Cheahn — Executive Profile", "linkedin": "Terhubung di LinkedIn", "footer": "Pengusaha teknologi & pemimpin bisnis", "top": "Kembali ke atas"
+  },
+  "home": {
+    "role": "Pengusaha teknologi & pemimpin bisnis.",
+    "intro": "Saya memulai karier dari IT support. Kini saya membangun perusahaan dan memimpin tim untuk mengembangkan produk digital yang menjawab kebutuhan bisnis.",
+    "primary": "Jelajahi perjalanan", "secondary": "Diskusikan kolaborasi",
+    "rolesLabel": "PERAN SAAT INI",
+    "focusLabel": "01 / CARA SAYA BEKERJA",
+    "focusTitle": "Dari peluang pasar ke produk yang berguna.",
+    "focusIntro": "Pengalaman di lapangan membentuk cara saya mengambil keputusan bisnis: pahami kebutuhan pelanggan, tentukan prioritas, lalu bangun bersama tim.",
+    "focus": [
+      { "title": "Strategi bisnis", "text": "Memahami pasar dan pelanggan sebelum menentukan peluang mana yang layak dikejar." },
+      { "title": "Pengembangan produk", "text": "Menerjemahkan kebutuhan nyata menjadi produk dan alur kerja yang lebih mudah digunakan." },
+      { "title": "Kepemimpinan tim", "text": "Menyatukan prioritas bisnis, produk, dan teknologi agar tim punya arah yang sama." }
+    ],
+    "careerLabel": "02 / PERJALANAN",
+    "careerTitle": "Dari merintis hingga memimpin.",
+    "careerLink": "Baca perjalanan lengkap",
+    "milestones": [
+      { "year": "2017", "title": "Mulai dari lapangan", "text": "Memulai karier sebagai teknisi IT support di Batam." },
+      { "year": "2022", "title": "Mendirikan Sliva", "text": "Mendirikan PT Sliva Technology Indonesia dan mengambil peran sebagai CEO." },
+      { "year": "2026", "title": "Memperluas kepemimpinan", "text": "Menjabat sebagai CEO Aracita Group dan ZÉRA, serta CTO PT Yuk Inovasi Digital." }
+    ],
+    "featureLabel": "03 / SOROTAN PUBLIK",
+    "featureTitle": "Berbagi perspektif tentang masa depan internet.",
+    "featureText": "Pada Indonesia Website Awards & WebDevTalk 2023, saya membahas bagaimana Web3 dapat mengubah cara bisnis dan pengguna berinteraksi di internet.",
+    "featureLink": "Lihat media & acara"
+  },
+  "journey": {
+    "label": "01 / PERJALANAN KARIER",
+    "heading": "Dari lapangan ke kepemimpinan.",
+    "intro": "Perjalanan dari membantu orang menyelesaikan masalah teknis hingga memimpin perusahaan dan tim. Setiap tahap memperluas cara saya melihat masalah bisnis.",
+    "entries": [
+      { "period": "2017–2018", "title": "Memulai di IT support", "organization": "IT STORE COM · Batam", "text": "Saya memulai karier sebagai teknisi yang menangani diagnosis dan perbaikan komputer serta printer. Di sana saya belajar mendengar keluhan pengguna dan mencari akar masalahnya.", "source": "profile" },
+      { "period": "2020–2022", "title": "Membangun produk digital", "organization": "DQLab · Sliva IT · Pintaar · DumbWays", "text": "Saya beralih ke analisis data dan pengembangan produk digital. Pengalaman ini memberi saya gambaran utuh tentang cara kebutuhan pengguna diterjemahkan menjadi produk yang siap digunakan.", "source": "profile" },
+      { "period": "2022", "title": "Mendirikan Sliva Technology Indonesia", "organization": "Founder & CEO · PT Sliva Technology Indonesia", "text": "Mendirikan Sliva mengubah tanggung jawab saya: dari membangun produk menjadi menentukan arah perusahaan. Tahun itu, Universitas Muhammadiyah Riau juga mencatat saya sebagai juara pertama tingkat nasional di Forum Digital BUMN.", "source": "umri" },
+      { "period": "2023", "title": "Merintis SlivaDoc dan berbagi di panggung publik", "organization": "SlivaDoc · Indonesia Website Awards & WebDevTalk", "text": "Saya mulai menjabat sebagai CEO SlivaDoc, dengan fokus pada digitalisasi layanan kesehatan hewan. Di WebDevTalk, saya berbicara tentang Web3 dan masa depan internet.", "source": "iwa" },
+      { "period": "2023–2026", "title": "Memimpin teknologi lintas industri", "organization": "Indo Teknik · MSIG Life · GMS Church · Lion Parcel", "text": "Sebagai Head of Technology di Indo Teknik, saya menangani perencanaan proyek, koordinasi tim, dan pengembangan produk. Pengalaman di MSIG Life, GMS Church, dan Lion Parcel memperluas wawasan saya tentang operasi asuransi, organisasi komunitas, dan logistik.", "source": "profile" },
+      { "period": "2026", "title": "Memperluas peran eksekutif", "organization": "ZÉRA · Aracita Group · PT Yuk Inovasi Digital", "text": "Saya mengambil peran CEO di ZÉRA dan Aracita Group, serta CTO di PT Yuk Inovasi Digital, sambil melanjutkan kepemimpinan di Sliva dan SlivaDoc.", "source": "profile" }
+    ]
+  },
+  "ventures": {
+    "label": "02 / BISNIS & KEPEMIMPINAN",
+    "heading": "Perusahaan dan tim yang saya pimpin.",
+    "intro": "Peran saya mencakup membangun perusahaan, mengembangkan produk, dan menyelaraskan keputusan teknologi dengan kebutuhan bisnis.",
+    "current": "Peran saat ini",
+    "entries": [
+      { "name": "Sliva Technology Indonesia", "mark": "S", "role": "Founder & CEO", "period": "Sejak Maret 2022", "field": "Bisnis teknologi", "text": "Saya mendirikan PT Sliva Technology Indonesia untuk mengembangkan solusi digital yang berangkat dari kebutuhan bisnis. Sebagai CEO, saya memimpin arah perusahaan dan pengembangan produknya.", "source": "sliva" },
+      { "name": "SlivaDoc", "mark": "Sd", "role": "CEO", "period": "Sejak Januari 2023", "field": "Teknologi kesehatan hewan", "text": "SlivaDoc membantu klinik hewan dan pet shop beralih ke operasional digital, termasuk pengelolaan data kesehatan hewan dan alur layanan sehari-hari.", "source": "slivadoc" },
+      { "name": "Aracita Group", "mark": "A", "role": "CEO", "period": "Sejak April 2026", "field": "Acara & industri kreatif", "text": "Aracita menangani perencanaan, koordinasi, dan produksi acara, dari kegiatan korporat dan aktivasi merek hingga pernikahan.", "source": "aracita" },
+      { "name": "ZÉRA", "mark": "Z", "role": "CEO", "period": "Sejak Maret 2026", "field": "Kepemimpinan bisnis", "text": "Saya menjabat sebagai CEO ZÉRA, salah satu peran kepemimpinan bisnis yang saya ambil pada 2026.", "source": "profile" },
+      { "name": "PT Yuk Inovasi Digital", "mark": "Y", "role": "CTO", "period": "Sejak Juni 2026", "field": "Kepemimpinan teknologi", "text": "Sebagai CTO, fokus saya adalah arah teknologi dan kaitannya dengan kebutuhan perusahaan.", "source": "profile" }
+    ],
+    "workLabel": "PENGALAMAN LINTAS INDUSTRI",
+    "workTitle": "Konteks bisnis yang membentuk cara saya bekerja.",
+    "work": [
+      { "name": "Indo Teknik", "field": "Manufaktur & perdagangan", "text": "Memimpin teknologi dan pengembangan platform untuk perdagangan suku cadang diesel.", "source": "work" },
+      { "name": "MSIG Life", "field": "Asuransi", "text": "Berkontribusi pada pengembangan dan desain antarmuka produk digital di industri asuransi.", "source": "profile" },
+      { "name": "Lion Parcel", "field": "Logistik", "text": "Berkontribusi pada pengembangan platform pengiriman Lion Parcel.", "source": "work" }
+    ]
+  },
+  "media": {
+    "label": "03 / MEDIA & PANGGUNG PUBLIK",
+    "heading": "Acara, liputan, dan penghargaan.",
+    "intro": "Catatan publik tentang kontribusi saya dalam percakapan seputar teknologi, industri kreatif, dan talenta digital di Indonesia.",
+    "feature": {
+      "tag": "PEMBICARA · 1 MARET 2023",
+      "title": "Indonesia Website Awards & WebDevTalk 2023",
+      "text": "Dalam sesi tentang Web3, saya membahas bagaimana teknologi ini dapat membentuk masa depan internet. Rilis Kominfo memberi konteks tentang pesan kementerian mengenai kebutuhan talenta digital di acara tersebut.",
+      "primary": "Agenda resmi Exabytes", "secondary": "Rilis Kominfo di Komdigi"
+    },
+    "listTitle": "Sorotan lainnya",
+    "entries": [
+      { "date": "April 2023", "publisher": "FKK News", "tag": "Liputan", "title": "Blockchain dan masa depan industri kreatif", "text": "FKK News memperkenalkan saya sebagai narasumber dalam pembahasan tentang penerapan blockchain di industri kreatif.", "source": "fkk" },
+      { "date": "Agustus 2022", "publisher": "Exabytes Developer Club", "tag": "Pembicara", "title": "Desentralisasi Web3 dan masa depan internet", "text": "Sesi komunitas Exabytes tentang desentralisasi dan bagaimana Web3 dapat mengubah cara ekosistem internet bekerja.", "source": "edc" },
+      { "date": "2022", "publisher": "Universitas Muhammadiyah Riau", "tag": "Penghargaan", "title": "Juara pertama Forum Digital BUMN", "text": "Universitas Muhammadiyah Riau mencatat pencapaian ini dalam daftar prestasi mahasiswa tingkat nasional.", "source": "umri" }
+    ]
+  },
+  "contact": {
+    "label": "04 / KONTAK",
+    "heading": "Mari mulai percakapan.",
+    "intro": "Saya terbuka untuk berdiskusi dengan pelaku bisnis, tim produk, dan penyelenggara acara yang ingin mengembangkan gagasan bersama.",
+    "channel": "Kontak profesional", "channelText": "Kirim pesan melalui LinkedIn. Ceritakan singkat tentang organisasi Anda, peluang yang ingin dibahas, dan tujuan percakapannya.",
+    "topicsTitle": "Topik kolaborasi",
+    "topics": [
+      { "title": "Kemitraan bisnis", "text": "Menjajaki peluang lintas industri dan bentuk kerja sama yang bermanfaat bagi kedua pihak." },
+      { "title": "Produk & transformasi digital", "text": "Membahas kebutuhan pengguna, prioritas produk, dan peran teknologi dalam operasional." },
+      { "title": "Acara & media", "text": "Undangan untuk berbicara tentang kewirausahaan, kepemimpinan teknologi, atau ekosistem digital Indonesia." }
+    ]
+  },
+  "cta": { "label": "KOLABORASI", "title": "Ada peluang untuk dibahas bersama?", "text": "Mari berbicara tentang kemitraan, pengembangan produk, atau undangan sebagai pembicara.", "link": "Mulai percakapan" },
+  "missing": { "title": "Halaman tidak ditemukan", "text": "Halaman ini mungkin telah dipindahkan. Kembali ke beranda untuk melanjutkan." }
+}

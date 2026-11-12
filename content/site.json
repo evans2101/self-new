@@ -1,0 +1,24 @@
+{
+  "name": "Evans Moris Cheahn",
+  "siteUrl": "https://evans2101.github.io/self-new/",
+  "defaultLocale": "id",
+  "locales": {
+    "id": { "label": "Bahasa Indonesia", "short": "ID", "og": "id_ID", "path": "" },
+    "en": { "label": "English", "short": "EN", "og": "en_US", "path": "en/" },
+    "zh-Hans": { "label": "简体中文", "short": "中文", "og": "zh_CN", "path": "zh/" }
+  },
+  "linkedin": "https://id.linkedin.com/in/evansmoris21",
+  "sources": {
+    "profile": "https://id.linkedin.com/in/evansmoris21",
+    "komdigi": "https://www.komdigi.go.id/berita/siaran-pers/detail/siaran-pers-no-28-hm-kominfo-03-2023-tentang-kembangkan-ekonomi-digital-indonesia-butuh-talenta-digital-berkualitas",
+    "iwa": "https://www.exabytes.co.id/events/acara/indonesia-website-awards-x-webdevtalk-2023-offline-event",
+    "edc": "https://www.exabytes.co.id/events/acara/edc-web3-decentralization-for-the-future-of-the-internet",
+    "umri": "https://informatika.fasilkom.umri.ac.id/page/prestasi-mahasiswa",
+    "fkk": "https://www.fkknews.com/masa-depan-industri-kreatif-di-era-teknologi-blockchain/",
+    "sliva": "https://id.linkedin.com/company/sliva",
+    "slivadoc": "https://id.linkedin.com/company/slivadoc",
+    "aracita": "https://www.linkedin.com/company/aracita-group",
+    "work": "https://evansmoris.id/projects"
+  },
+  "portraitCredit": "https://www.exabytes.co.id/events/wp-content/uploads/2023/01/1100x400-iwa-speaker-32.jpg"
+}
