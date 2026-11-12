@@ -7,14 +7,14 @@
     "contact": { "slug": "contact", "label": "联系", "title": "商务合作与联系｜Evans Moris Cheahn", "description": "通过 LinkedIn 联系 Evans Moris Cheahn，探讨商务合作、数字产品开发或演讲邀约。" }
   },
   "ui": {
-    "profile": "管理者档案", "location": "印度尼西亚 · 雅加达", "navigation": "主导航", "languages": "语言选择", "skip": "跳转到正文", "source": "查看来源", "next": "继续浏览", "credit": "照片来源：Exabytes · WebDevTalk 2023", "portraitAlt": "身穿黑色西装外套的 Evans Moris Cheahn", "socialAlt": "Evans Moris Cheahn 管理者档案", "linkedin": "在 LinkedIn 上联系", "footer": "科技创业者与企业管理者", "top": "返回顶部"
+    "profile": "管理者档案", "location": "印度尼西亚 · 雅加达", "navigation": "主导航", "languages": "语言选择", "skip": "跳转到正文", "source": "查看来源", "next": "继续浏览", "portraitAlt": "Evans Moris Cheahn 的肖像", "socialAlt": "Evans Moris Cheahn 管理者档案", "linkedin": "在 LinkedIn 上联系", "footer": "科技创业者与企业管理者", "top": "返回顶部"
   },
   "home": {
     "role": "科技创业者与企业管理者。",
     "intro": "我的职业生涯始于 IT 支持。如今，我创办企业、带领团队，围绕真实的业务需求开发数字产品。",
     "primary": "了解我的职业历程", "secondary": "探讨合作",
     "rolesLabel": "现任职务",
-    "focusLabel": "01 / 我的工作方法",
+    "focusLabel": "我的工作方法",
     "focusTitle": "从市场机会出发，打造实用的产品。",
     "focusIntro": "一线经验塑造了我的决策方式：先了解客户的需求，再明确优先事项，最后与团队一起落实。",
     "focus": [
@@ -22,7 +22,7 @@
       { "title": "产品开发", "text": "把真实需求转化为易用的产品和工作流程。" },
       { "title": "团队管理", "text": "协调业务、产品与技术的优先事项，让团队朝着共同目标前进。" }
     ],
-    "careerLabel": "02 / 职业历程",
+    "careerLabel": "职业历程",
     "careerTitle": "从初入职场到带领团队。",
     "careerLink": "阅读完整历程",
     "milestones": [
@@ -30,13 +30,13 @@
       { "year": "2022", "title": "创立 Sliva", "text": "创立 PT Sliva Technology Indonesia 并担任首席执行官。" },
       { "year": "2026", "title": "拓展管理职责", "text": "出任 Aracita Group 与 ZÉRA 首席执行官，以及 PT Yuk Inovasi Digital 首席技术官。" }
     ],
-    "featureLabel": "03 / 公开活动",
+    "featureLabel": "公开活动",
     "featureTitle": "探讨互联网的未来。",
     "featureText": "在 2023 年 Indonesia Website Awards 与 WebDevTalk 活动上，我分享了 Web3 可能如何改变企业与用户的线上互动。",
     "featureLink": "浏览媒体与活动"
   },
   "journey": {
-    "label": "01 / 职业历程",
+    "label": "职业历程",
     "heading": "从一线技术支持到企业管理。",
     "intro": "我从为用户解决技术问题做起，逐步走向企业和团队管理。每一段经历都拓宽了我看待业务问题的视角。",
     "entries": [
@@ -49,7 +49,7 @@
     ]
   },
   "ventures": {
-    "label": "02 / 事业与管理",
+    "label": "事业与管理",
     "heading": "我管理的企业与团队。",
     "intro": "我的工作涵盖企业创建、产品开发，以及围绕业务需求制定技术决策。",
     "current": "现任职务",
@@ -69,7 +69,7 @@
     ]
   },
   "media": {
-    "label": "03 / 媒体与演讲",
+    "label": "媒体与演讲",
     "heading": "公开活动、媒体报道与荣誉。",
     "intro": "这里记录了我参与的公开讨论，主题包括技术、创意产业和印度尼西亚数字人才。",
     "feature": {
@@ -86,7 +86,7 @@
     ]
   },
   "contact": {
-    "label": "04 / 联系",
+    "label": "联系",
     "heading": "欢迎交流。",
     "intro": "欢迎企业管理者、产品团队及活动组织者联系我，共同探讨合作机会。",
     "channel": "商务联系", "channelText": "欢迎通过 LinkedIn 发消息，简要介绍您的机构、希望讨论的机会，以及这次交流的目标。",

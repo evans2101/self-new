@@ -7,14 +7,14 @@
     "contact": { "slug": "contact", "label": "Contact", "title": "Business & Collaboration Inquiries | Evans Moris Cheahn", "description": "Connect with Evans Moris Cheahn on LinkedIn for business partnerships, digital product collaboration and speaking invitations." }
   },
   "ui": {
-    "profile": "Executive profile", "location": "Jakarta, Indonesia", "navigation": "Main navigation", "languages": "Languages", "skip": "Skip to content", "source": "View source", "next": "Explore next", "credit": "Photo: Exabytes · WebDevTalk 2023", "portraitAlt": "Portrait of Evans Moris Cheahn in a black blazer", "socialAlt": "Evans Moris Cheahn — Executive Profile", "linkedin": "Connect on LinkedIn", "footer": "Technology entrepreneur & business leader", "top": "Back to top"
+    "profile": "Executive profile", "location": "Jakarta, Indonesia", "navigation": "Main navigation", "languages": "Languages", "skip": "Skip to content", "source": "View source", "next": "Explore next", "portraitAlt": "Portrait of Evans Moris Cheahn", "socialAlt": "Evans Moris Cheahn — Executive Profile", "linkedin": "Connect on LinkedIn", "footer": "Technology entrepreneur & business leader", "top": "Back to top"
   },
   "home": {
     "role": "Technology entrepreneur & business leader.",
     "intro": "I started my career in IT support. Today, I build companies and lead teams that develop digital products around real business needs.",
     "primary": "Explore my journey", "secondary": "Discuss a collaboration",
     "rolesLabel": "CURRENT ROLES",
-    "focusLabel": "01 / HOW I WORK",
+    "focusLabel": "HOW I WORK",
     "focusTitle": "Turning market opportunities into useful products.",
     "focusIntro": "Working directly with users shaped how I make business decisions: understand what customers need, set priorities, then build with the team.",
     "focus": [
@@ -22,7 +22,7 @@
       { "title": "Product development", "text": "Turn real needs into products and workflows that are easier to use." },
       { "title": "Team leadership", "text": "Align business, product, and technology priorities so teams can move in the same direction." }
     ],
-    "careerLabel": "02 / CAREER JOURNEY",
+    "careerLabel": "CAREER JOURNEY",
     "careerTitle": "From getting started to leading teams.",
     "careerLink": "Read the full story",
     "milestones": [
@@ -30,13 +30,13 @@
       { "year": "2022", "title": "Founding Sliva", "text": "Founded PT Sliva Technology Indonesia and stepped into the CEO role." },
       { "year": "2026", "title": "Expanding my leadership roles", "text": "Became CEO of Aracita Group and ZÉRA, and CTO of PT Yuk Inovasi Digital." }
     ],
-    "featureLabel": "03 / PUBLIC HIGHLIGHT",
+    "featureLabel": "PUBLIC HIGHLIGHT",
     "featureTitle": "A conversation about the future of the internet.",
     "featureText": "At Indonesia Website Awards & WebDevTalk 2023, I spoke about how Web3 could change the way businesses and users interact online.",
     "featureLink": "Explore media & events"
   },
   "journey": {
-    "label": "01 / CAREER JOURNEY",
+    "label": "CAREER JOURNEY",
     "heading": "From the front line to leadership.",
     "intro": "My career began with solving technical problems for users and grew into leading companies and teams. Each step broadened how I think about business problems.",
     "entries": [
@@ -49,7 +49,7 @@
     ]
   },
   "ventures": {
-    "label": "02 / VENTURES & LEADERSHIP",
+    "label": "VENTURES & LEADERSHIP",
     "heading": "The companies and teams I lead.",
     "intro": "My work spans company building, product development, and aligning technology decisions with business needs.",
     "current": "Current roles",
@@ -69,7 +69,7 @@
     ]
   },
   "media": {
-    "label": "03 / MEDIA & SPEAKING",
+    "label": "MEDIA & SPEAKING",
     "heading": "Events, coverage, and recognition.",
     "intro": "A public record of my contributions to conversations about technology, the creative industries, and digital talent in Indonesia.",
     "feature": {
@@ -86,7 +86,7 @@
     ]
   },
   "contact": {
-    "label": "04 / CONTACT",
+    "label": "CONTACT",
     "heading": "Let’s start a conversation.",
     "intro": "I’m open to conversations with business leaders, product teams, and event organizers interested in working together.",
     "channel": "Professional contact", "channelText": "Send a LinkedIn message with a brief introduction to your organization, the opportunity you’d like to discuss, and what you hope to accomplish.",

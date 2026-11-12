@@ -7,14 +7,14 @@
     "contact": { "slug": "kontak", "label": "Kontak", "title": "Kontak Bisnis & Kolaborasi | Evans Moris Cheahn", "description": "Hubungi Evans Moris Cheahn melalui LinkedIn untuk kemitraan bisnis, kolaborasi produk digital, dan undangan sebagai pembicara." }
   },
   "ui": {
-    "profile": "Profil eksekutif", "location": "Jakarta, Indonesia", "navigation": "Navigasi utama", "languages": "Pilihan bahasa", "skip": "Lewati ke konten", "source": "Lihat sumber", "next": "Jelajahi berikutnya", "credit": "Foto: Exabytes · WebDevTalk 2023", "portraitAlt": "Potret Evans Moris Cheahn dengan jas hitam", "socialAlt": "Evans Moris Cheahn — Executive Profile", "linkedin": "Terhubung di LinkedIn", "footer": "Pengusaha teknologi & pemimpin bisnis", "top": "Kembali ke atas"
+    "profile": "Profil eksekutif", "location": "Jakarta, Indonesia", "navigation": "Navigasi utama", "languages": "Pilihan bahasa", "skip": "Lewati ke konten", "source": "Lihat sumber", "next": "Jelajahi berikutnya", "portraitAlt": "Potret Evans Moris Cheahn", "socialAlt": "Evans Moris Cheahn — Executive Profile", "linkedin": "Terhubung di LinkedIn", "footer": "Pengusaha teknologi & pemimpin bisnis", "top": "Kembali ke atas"
   },
   "home": {
     "role": "Pengusaha teknologi & pemimpin bisnis.",
     "intro": "Saya memulai karier dari IT support. Kini saya membangun perusahaan dan memimpin tim untuk mengembangkan produk digital yang menjawab kebutuhan bisnis.",
     "primary": "Jelajahi perjalanan", "secondary": "Diskusikan kolaborasi",
     "rolesLabel": "PERAN SAAT INI",
-    "focusLabel": "01 / CARA SAYA BEKERJA",
+    "focusLabel": "CARA SAYA BEKERJA",
     "focusTitle": "Dari peluang pasar ke produk yang berguna.",
     "focusIntro": "Pengalaman di lapangan membentuk cara saya mengambil keputusan bisnis: pahami kebutuhan pelanggan, tentukan prioritas, lalu bangun bersama tim.",
     "focus": [
@@ -22,7 +22,7 @@
       { "title": "Pengembangan produk", "text": "Menerjemahkan kebutuhan nyata menjadi produk dan alur kerja yang lebih mudah digunakan." },
       { "title": "Kepemimpinan tim", "text": "Menyatukan prioritas bisnis, produk, dan teknologi agar tim punya arah yang sama." }
     ],
-    "careerLabel": "02 / PERJALANAN",
+    "careerLabel": "PERJALANAN",
     "careerTitle": "Dari merintis hingga memimpin.",
     "careerLink": "Baca perjalanan lengkap",
     "milestones": [
@@ -30,13 +30,13 @@
       { "year": "2022", "title": "Mendirikan Sliva", "text": "Mendirikan PT Sliva Technology Indonesia dan mengambil peran sebagai CEO." },
       { "year": "2026", "title": "Memperluas kepemimpinan", "text": "Menjabat sebagai CEO Aracita Group dan ZÉRA, serta CTO PT Yuk Inovasi Digital." }
     ],
-    "featureLabel": "03 / SOROTAN PUBLIK",
+    "featureLabel": "SOROTAN PUBLIK",
     "featureTitle": "Berbagi perspektif tentang masa depan internet.",
     "featureText": "Pada Indonesia Website Awards & WebDevTalk 2023, saya membahas bagaimana Web3 dapat mengubah cara bisnis dan pengguna berinteraksi di internet.",
     "featureLink": "Lihat media & acara"
   },
   "journey": {
-    "label": "01 / PERJALANAN KARIER",
+    "label": "PERJALANAN KARIER",
     "heading": "Dari lapangan ke kepemimpinan.",
     "intro": "Perjalanan dari membantu orang menyelesaikan masalah teknis hingga memimpin perusahaan dan tim. Setiap tahap memperluas cara saya melihat masalah bisnis.",
     "entries": [
@@ -49,7 +49,7 @@
     ]
   },
   "ventures": {
-    "label": "02 / BISNIS & KEPEMIMPINAN",
+    "label": "BISNIS & KEPEMIMPINAN",
     "heading": "Perusahaan dan tim yang saya pimpin.",
     "intro": "Peran saya mencakup membangun perusahaan, mengembangkan produk, dan menyelaraskan keputusan teknologi dengan kebutuhan bisnis.",
     "current": "Peran saat ini",
@@ -69,7 +69,7 @@
     ]
   },
   "media": {
-    "label": "03 / MEDIA & PANGGUNG PUBLIK",
+    "label": "MEDIA & PANGGUNG PUBLIK",
     "heading": "Acara, liputan, dan penghargaan.",
     "intro": "Catatan publik tentang kontribusi saya dalam percakapan seputar teknologi, industri kreatif, dan talenta digital di Indonesia.",
     "feature": {
@@ -86,7 +86,7 @@
     ]
   },
   "contact": {
-    "label": "04 / KONTAK",
+    "label": "KONTAK",
     "heading": "Mari mulai percakapan.",
     "intro": "Saya terbuka untuk berdiskusi dengan pelaku bisnis, tim produk, dan penyelenggara acara yang ingin mengembangkan gagasan bersama.",
     "channel": "Kontak profesional", "channelText": "Kirim pesan melalui LinkedIn. Ceritakan singkat tentang organisasi Anda, peluang yang ingin dibahas, dan tujuan percakapannya.",

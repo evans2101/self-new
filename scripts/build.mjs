@@ -66,8 +66,8 @@ function cta(c) {
   return `<section class="site-cta"><div class="wrap cta-inner"><div>${label(a.label)}<h2>${escape(a.title)}</h2><p>${escape(a.text)}</p></div>${button(a.link,c.to('contact'),'light')}</div></section>`;
 }
 
-function pageIntro(c, data, no) {
-  return `<section class="page-intro"><div class="wrap intro-inner"><div>${label(data.label)}<h1>${escape(data.heading)}</h1><p>${escape(data.intro)}</p></div><svg class="page-number" aria-hidden="true" viewBox="0 0 290 200"><text x="282" y="174" text-anchor="end">${no}</text></svg></div></section>`;
+function pageIntro(data) {
+  return `<section class="page-intro"><div class="wrap intro-inner">${label(data.label)}<h1>${escape(data.heading)}</h1><p>${escape(data.intro)}</p></div></section>`;
 }
 
 function next(c, pages) {
@@ -77,53 +77,46 @@ function next(c, pages) {
 function home(c) {
   const { d, ui, to, asset } = c;
   const h = d.home;
-  return `<section class="wrap hero" aria-labelledby="name">
+  return `<section class="hero-shell" aria-labelledby="name"><div class="wrap hero">
   <div class="hero-copy">
-    <p class="hero-kicker"><span></span>${escape(ui.profile)}</p>
-    <h1 id="name">Evans Moris <em>Cheahn<span>.</span></em></h1>
+    <p class="hero-kicker">${pin}${escape(ui.location)}</p>
+    <h1 id="name">Evans Moris <span>Cheahn</span></h1>
     <p class="hero-role">${escape(h.role)}</p>
     <p class="hero-description">${escape(h.intro)}</p>
     <div class="actions">${button(h.primary,to('journey'))}${button(h.secondary,to('contact'),'secondary',diagonal)}</div>
   </div>
-  <figure class="portrait">
-    <div class="portrait-field">
-      <div class="portrait-grid" aria-hidden="true"></div>
-      <span class="portrait-index" aria-hidden="true">EMC / 01</span>
-      <span class="portrait-point" aria-hidden="true">+</span>
-      <div class="portrait-ring" aria-hidden="true"></div>
-      <img width="492" height="458" src="${asset('evans-moris-cheahn.webp')}" fetchpriority="high" alt="${escape(ui.portraitAlt)}">
-      <figcaption><span>${pin}${escape(ui.location)}</span><a href="${escape(sources.iwa)}">${escape(ui.credit)}</a></figcaption>
-    </div>
-  </figure>
-</section>
+  <div class="portrait">
+    <img width="400" height="400" src="${asset('evans-moris-cheahn-profile.webp')}" fetchpriority="high" alt="${escape(ui.portraitAlt)}">
+  </div>
+</div></section>
 <div class="role-band"><div class="wrap role-inner">
   ${label(h.rolesLabel)}
   <ul>${d.ventures.entries.map((v,i) => `<li><a href="${to('ventures')}#role-${i+1}">${escape(v.name)}</a></li>`).join('')}</ul>
 </div></div>
 <section class="wrap section focus">
   <div class="section-heading">${label(h.focusLabel)}<h2>${escape(h.focusTitle)}</h2><p>${escape(h.focusIntro)}</p></div>
-  <div class="tile-grid">${h.focus.map((f,i) => `<article class="tile"><div class="tile-top"><span class="tile-icon">${icons[i]}</span><span class="tile-number" aria-hidden="true">0${i+1}</span></div><h3>${escape(f.title)}</h3><p>${escape(f.text)}</p></article>`).join('')}</div>
+  <div class="tile-grid">${h.focus.map((f,i) => `<article class="tile"><span class="tile-icon">${icons[i]}</span><h3>${escape(f.title)}</h3><p>${escape(f.text)}</p></article>`).join('')}</div>
 </section>
 <section class="career-strip"><div class="wrap section">
   <div class="section-heading split"><div>${label(h.careerLabel)}<h2>${escape(h.careerTitle)}</h2></div>${link(h.careerLink,to('journey'))}</div>
   <ol class="milestones">${h.milestones.map(m => `<li><time datetime="${m.year}">${m.year}</time><h3>${escape(m.title)}</h3><p>${escape(m.text)}</p></li>`).join('')}</ol>
 </div></section>
 <section class="wrap section feature">
-  <div class="feature-graphic" aria-hidden="true"><span>IWA × WEBDEVTALK</span><strong>2023</strong><span>01 MAR / JAKARTA</span></div>
+  <div class="feature-graphic"><img src="${asset('webdevtalk-2023.webp')}" width="900" height="473" alt="" loading="lazy" decoding="async"></div>
   <div>${label(h.featureLabel)}<h2>${escape(h.featureTitle)}</h2><p>${escape(h.featureText)}</p>${link(h.featureLink,to('media'))}</div>
 </section>${cta(c)}`;
 }
 
 function journey(c) {
   const j = c.d.journey;
-  return pageIntro(c,j,'01')+`<section class="wrap section timeline-section" aria-label="${escape(c.d.pages.journey.label)}">
+  return pageIntro(j)+`<section class="wrap section timeline-section" aria-label="${escape(c.d.pages.journey.label)}">
   <ol class="timeline">${j.entries.map(item => `<li><div class="timeline-period">${escape(item.period)}</div><article><p class="organization">${escape(item.organization)}</p><h2>${escape(item.title)}</h2><p>${escape(item.text)}</p>${sourceLink(c.ui.source,item.source,item.title)}</article></li>`).join('')}</ol>
 </section>${next(c,['ventures','media'])}${cta(c)}`;
 }
 
 function ventures(c) {
   const v = c.d.ventures;
-  return pageIntro(c,v,'02')+`<section class="wrap section venture-list" aria-labelledby="current-roles"><h2 id="current-roles" class="eyebrow">${escape(v.current)}</h2>
+  return pageIntro(v)+`<section class="wrap section venture-list" aria-labelledby="current-roles"><h2 id="current-roles" class="eyebrow">${escape(v.current)}</h2>
   <div>${v.entries.map((item,i) => `<article class="venture-row" id="role-${i+1}">
     <div class="venture-identity"><span class="venture-mark mark-${i+1}" aria-hidden="true">${escape(item.mark)}</span><div><p class="organization">${escape(item.field)}</p><h3>${escape(item.name)}</h3><p class="role-date">${escape(item.role)} · ${escape(item.period)}</p></div></div>
     <div class="venture-detail"><p>${escape(item.text)}</p>${sourceLink(c.ui.source,item.source,item.name)}</div>
@@ -136,7 +129,7 @@ function ventures(c) {
 
 function media(c) {
   const m = c.d.media;
-  return pageIntro(c,m,'03')+`<section class="wrap section">
+  return pageIntro(m)+`<section class="wrap section">
   <article class="media-feature"><div class="media-copy">${label(m.feature.tag)}<h2>${escape(m.feature.title)}</h2><p>${escape(m.feature.text)}</p>
     <div class="media-links">${external(m.feature.primary,'iwa')}${external(m.feature.secondary,'komdigi')}</div></div>
     <div class="media-art"><img width="900" height="473" src="${c.asset('webdevtalk-2023.webp')}" alt="" decoding="async"><a href="${escape(sources.iwa)}">Exabytes · WebDevTalk 2023 ${diagonal}</a></div>
@@ -148,15 +141,15 @@ function media(c) {
 
 function contact(c) {
   const a = c.d.contact;
-  return pageIntro(c,a,'04')+`<section class="wrap section contact-grid">
+  return pageIntro(a)+`<section class="wrap section contact-grid">
   <article class="contact-card">${label(c.ui.profile)}<h2>${escape(a.channel)}</h2><p>${escape(a.channelText)}</p>${button(c.ui.linkedin,site.linkedin,'primary',diagonal)}</article>
-  <div class="contact-topics"><h2>${escape(a.topicsTitle)}</h2><ol>${a.topics.map((item,i) => `<li><span aria-hidden="true">0${i+1}</span><div><h3>${escape(item.title)}</h3><p>${escape(item.text)}</p></div></li>`).join('')}</ol></div>
+  <div class="contact-topics"><h2>${escape(a.topicsTitle)}</h2><ul>${a.topics.map(item => `<li><h3>${escape(item.title)}</h3><p>${escape(item.text)}</p></li>`).join('')}</ul></div>
 </section>${next(c,['ventures','media'])}`;
 }
 
 const render = { home, journey, ventures, media, contact };
 function structured(c, meta, canonical) {
-  const person = { '@type': 'Person', '@id': absolute('#evans-moris-cheahn'), name: siteName, url: base.href, image: absolute('assets/evans-moris-cheahn.webp'), sameAs: [site.linkedin], jobTitle: c.ui.footer };
+  const person = { '@type': 'Person', '@id': absolute('#evans-moris-cheahn'), name: siteName, url: base.href, image: absolute('assets/evans-moris-cheahn-profile.webp'), sameAs: [site.linkedin], jobTitle: c.ui.footer };
   const webSite = { '@type':'WebSite', '@id': absolute('#website'), url: base.href, name: siteName, inLanguage: locales };
   const profile = { '@type': c.page === 'home' ? 'ProfilePage' : c.page === 'contact' ? 'ContactPage' : 'WebPage', '@id': canonical+'#page', url: canonical, name: meta.title, description: meta.description, inLanguage: c.locale, isPartOf: { '@id':webSite['@id'] }, [c.page==='home'?'mainEntity':'about']: { '@id':person['@id'] } };
   const graph = [person,webSite,profile];
@@ -175,16 +168,16 @@ function head(c, missing) {
   const { d, locale, page, asset } = c;
   const meta = missing ? { title:d.missing.title+' | '+siteName, description:d.missing.text } : d.pages[page];
   const canonical = missing ? '' : pathFor(locale,page);
-  const social = absolute('assets/evans-social.jpg');
+  const social = absolute('assets/evans-moris-cheahn-social.jpg');
   return `<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escape(meta.title)}</title>
 <meta name="description" content="${escape(meta.description)}">
-<meta name="theme-color" content="#f8f7f2">
+<meta name="theme-color" content="#f1f8ff">
 <meta name="robots" content="${missing?'noindex, follow':'index, follow, max-image-preview:large'}">
 <link rel="icon" href="${asset('mark.svg')}" type="image/svg+xml">
 <link rel="stylesheet" href="${asset(stylesheet)}">
-${page==='home'?`<link rel="preload" href="${asset('fraunces-latin-wght-normal.woff2')}" as="font" type="font/woff2" crossorigin>`:''}
+${page==='home'?`<link rel="preload" href="${asset('plus-jakarta-sans-latin-wght-normal.woff2')}" as="font" type="font/woff2" crossorigin>`:''}
 ${missing?'':`<link rel="canonical" href="${escape(canonical)}">
 ${locales.map(lang=>`<link rel="alternate" hreflang="${lang}" href="${escape(pathFor(lang,page))}">`).join('\n')}
 <link rel="alternate" hreflang="x-default" href="${escape(pathFor(site.defaultLocale,page))}">

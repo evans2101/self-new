@@ -26,7 +26,7 @@ Tetapkan `SITE_URL` ke URL publik beserta subpath, misalnya `SITE_URL=https://ex
 ## Sumber dan kredit
 
 - [Profil LinkedIn Evans Moris Cheahn](https://id.linkedin.com/in/evansmoris21) untuk riwayat dan jabatan.
-- [Agenda resmi Exabytes WebDevTalk 2023](https://www.exabytes.co.id/events/acara/indonesia-website-awards-x-webdevtalk-2023-offline-event) untuk penampilan sebagai pembicara, poster acara, dan [sumber foto profil](https://www.exabytes.co.id/events/wp-content/uploads/2023/01/1100x400-iwa-speaker-32.jpg). Foto profil dipotong dari materi pembicara.
+- [Agenda resmi Exabytes WebDevTalk 2023](https://www.exabytes.co.id/events/acara/indonesia-website-awards-x-webdevtalk-2023-offline-event) untuk penampilan sebagai pembicara dan poster acara.
 - [Rilis Kominfo di Komdigi](https://www.komdigi.go.id/berita/siaran-pers/detail/siaran-pers-no-28-hm-kominfo-03-2023-tentang-kembangkan-ekonomi-digital-indonesia-butuh-talenta-digital-berkualitas) untuk konteks acara.
 - [Universitas Muhammadiyah Riau](https://informatika.fasilkom.umri.ac.id/page/prestasi-mahasiswa) untuk catatan penghargaan.
-- DM Sans dan Fraunces dilisensikan dengan SIL Open Font License; salinan lisensi tersedia di folder aset.
+- Plus Jakarta Sans dilisensikan dengan SIL Open Font License; salinan lisensi tersedia di folder aset.
