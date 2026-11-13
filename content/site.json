@@ -19,5 +19,27 @@
     "slivadoc": "https://id.linkedin.com/company/slivadoc",
     "aracita": "https://www.linkedin.com/company/aracita-group",
     "work": "https://evansmoris.id/projects"
-  }
+  },
+  "brands": {
+    "sliva": { "name": "Sliva Technology Indonesia", "logo": "sliva.webp" },
+    "slivadoc": { "name": "SlivaDoc", "logo": "slivadoc.webp" },
+    "aracita": { "name": "Aracita Group", "logo": "aracita.webp" },
+    "zera": { "name": "ZÉRA", "logo": "zera.webp" },
+    "yuk": { "name": "PT Yuk Inovasi Digital", "monogram": "Y" },
+    "lion": { "name": "Lion Parcel", "logo": "lion.webp" },
+    "gms": { "name": "GMS Church", "logo": "gms.webp" },
+    "msig": { "name": "MSIG Life", "logo": "msig.webp" },
+    "indoteknik": { "name": "Indo Teknik", "logo": "indoteknik.webp" },
+    "indomobil": { "name": "Indomobil Group", "logo": "indomobil.webp" },
+    "creo": { "name": "Creo Engine", "logo": "creo.webp" },
+    "dqlab": { "name": "DQLab", "logo": "dqlab.webp" }
+  },
+  "pastExperience": [
+    { "brand": "lion", "period": "2025–2026" },
+    { "brand": "gms", "period": "2024–2026" },
+    { "brand": "msig", "period": "2024–2025" },
+    { "brand": "indoteknik", "period": "2023–2025" },
+    { "brand": "indomobil", "period": "2024" },
+    { "brand": "creo", "period": "2022" }
+  ]
 }

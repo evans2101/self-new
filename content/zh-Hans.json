@@ -7,78 +7,120 @@
     "contact": { "slug": "contact", "label": "联系", "title": "商务合作与联系｜Evans Moris Cheahn", "description": "通过 LinkedIn 联系 Evans Moris Cheahn，探讨商务合作、数字产品开发或演讲邀约。" }
   },
   "ui": {
-    "profile": "管理者档案", "location": "印度尼西亚 · 雅加达", "navigation": "主导航", "languages": "语言选择", "skip": "跳转到正文", "source": "查看来源", "next": "继续浏览", "portraitAlt": "Evans Moris Cheahn 的肖像", "socialAlt": "Evans Moris Cheahn 管理者档案", "linkedin": "在 LinkedIn 上联系", "footer": "科技创业者与企业管理者", "top": "返回顶部"
+    "location": "印度尼西亚 · 雅加达", "navigation": "主导航", "languages": "语言选择", "skip": "跳转到正文", "source": "查看来源", "portraitAlt": "Evans Moris Cheahn 的肖像", "socialAlt": "Evans Moris Cheahn 管理者档案", "footer": "科技创业者与企业管理者", "top": "返回顶部"
   },
   "home": {
-    "role": "科技创业者与企业管理者。",
-    "intro": "我的职业生涯始于 IT 支持。如今，我创办企业、带领团队，围绕真实的业务需求开发数字产品。",
-    "primary": "了解我的职业历程", "secondary": "探讨合作",
+    "role": "科技创业者 · CEO 兼 CTO",
+    "intro": "我创立了 Sliva，并带领团队为企业运营和动物医疗开发数字产品。",
+    "primary": "了解职业历程",
+    "secondary": "探讨合作",
     "rolesLabel": "现任职务",
     "focusLabel": "我的工作方法",
     "focusTitle": "从市场机会出发，打造实用的产品。",
-    "focusIntro": "一线经验塑造了我的决策方式：先了解客户的需求，再明确优先事项，最后与团队一起落实。",
     "focus": [
       { "title": "商业战略", "text": "先了解市场和客户，再判断哪些机会值得投入。" },
       { "title": "产品开发", "text": "把真实需求转化为易用的产品和工作流程。" },
       { "title": "团队管理", "text": "协调业务、产品与技术的优先事项，让团队朝着共同目标前进。" }
     ],
-    "careerLabel": "职业历程",
-    "careerTitle": "从初入职场到带领团队。",
-    "careerLink": "阅读完整历程",
-    "milestones": [
-      { "year": "2017", "title": "从一线做起", "text": "在巴淡岛从事 IT 技术支持，开启职业生涯。" },
-      { "year": "2022", "title": "创立 Sliva", "text": "创立 PT Sliva Technology Indonesia 并担任首席执行官。" },
-      { "year": "2026", "title": "拓展管理职责", "text": "出任 Aracita Group 与 ZÉRA 首席执行官，以及 PT Yuk Inovasi Digital 首席技术官。" }
-    ],
+    "careerTitle": "从 IT 支持到 CEO 兼 CTO。",
     "featureLabel": "公开活动",
-    "featureTitle": "探讨互联网的未来。",
-    "featureText": "在 2023 年 Indonesia Website Awards 与 WebDevTalk 活动上，我分享了 Web3 可能如何改变企业与用户的线上互动。",
-    "featureLink": "浏览媒体与活动"
+    "featureTitle": "在 WebDevTalk 2023 分享 Web3 见解。",
+    "awardTitle": "Forum Digital BUMN 第一名",
+    "awardDetail": "全国奖项 · 2022 年"
   },
   "journey": {
     "label": "职业历程",
-    "heading": "从一线技术支持到企业管理。",
-    "intro": "我从为用户解决技术问题做起，逐步走向企业和团队管理。每一段经历都拓宽了我看待业务问题的视角。",
+    "heading": "从 IT 支持到 CEO 兼 CTO。",
+    "intro": "2017 年，我在巴淡岛开启职业生涯。在多个行业参与产品开发后，我创立了 Sliva，逐步承担企业与技术管理职责。",
     "entries": [
       { "period": "2017–2018", "title": "从 IT 支持起步", "organization": "IT STORE COM · 巴淡岛", "text": "我的第一份技术工作是诊断和维修电脑与打印机。这段经历让我学会倾听用户，找到问题的根源。", "source": "profile" },
-      { "period": "2020–2022", "title": "参与数字产品开发", "organization": "DQLab · Sliva IT · Pintaar · DumbWays", "text": "我转向数据分析和数字产品开发，逐步了解团队如何把用户需求转化为实际可用的产品。", "source": "profile" },
-      { "period": "2022", "title": "创立 Sliva Technology Indonesia", "organization": "创始人兼首席执行官 · PT Sliva Technology Indonesia", "text": "创立 Sliva 之后，我的职责从产品开发拓展到制定公司方向。同年，Universitas Muhammadiyah Riau 记录了我在全国性赛事 Forum Digital BUMN 中获得第一名。", "source": "umri" },
-      { "period": "2023", "title": "推进 SlivaDoc 并参与公开演讲", "organization": "SlivaDoc · Indonesia Website Awards & WebDevTalk", "text": "我开始担任 SlivaDoc 首席执行官，专注于动物医疗服务的数字化。在 WebDevTalk 上，我分享了对 Web3 和互联网未来的看法。", "source": "iwa" },
-      { "period": "2023–2026", "title": "积累跨行业的技术管理经验", "organization": "Indo Teknik · MSIG Life · GMS Church · Lion Parcel", "text": "在 Indo Teknik 担任技术负责人期间，我负责项目规划、团队协调和产品开发。在 MSIG Life、GMS Church 与 Lion Parcel 的工作，也让我深入了解保险、社区组织和物流的运营。", "source": "profile" },
-      { "period": "2026", "title": "承担新的管理职责", "organization": "ZÉRA · Aracita Group · PT Yuk Inovasi Digital", "text": "在继续管理 Sliva 和 SlivaDoc 的同时，我出任 ZÉRA 与 Aracita Group 首席执行官，以及 PT Yuk Inovasi Digital 首席技术官。", "source": "profile" }
-    ]
+      {
+        "period": "2020–2022",
+        "title": "参与数字产品开发",
+        "organization": "DQLab · Sliva IT · Pintaar · DumbWays",
+        "text": "我转向数据分析和数字产品开发，逐步了解团队如何把用户需求转化为实际可用的产品。",
+        "source": "profile",
+        "brands": [
+          "dqlab"
+        ]
+      },
+      {
+        "period": "2022",
+        "title": "创立 Sliva Technology Indonesia",
+        "organization": "创始人兼首席执行官 · PT Sliva Technology Indonesia",
+        "text": "创立 Sliva 之后，我的职责从产品开发拓展到制定公司方向。同年，Universitas Muhammadiyah Riau 记录了我在全国性赛事 Forum Digital BUMN 中获得第一名。",
+        "source": "umri",
+        "brands": [
+          "sliva"
+        ]
+      },
+      {
+        "period": "2023",
+        "title": "推进 SlivaDoc 并参与公开演讲",
+        "organization": "SlivaDoc · Indonesia Website Awards & WebDevTalk",
+        "text": "我开始担任 SlivaDoc 首席执行官，专注于动物医疗服务的数字化。在 WebDevTalk 上，我分享了对 Web3 和互联网未来的看法。",
+        "source": "iwa",
+        "brands": [
+          "slivadoc"
+        ]
+      },
+      {
+        "period": "2023–2026",
+        "title": "积累跨行业的技术管理经验",
+        "organization": "Indo Teknik · MSIG Life · GMS Church · Lion Parcel",
+        "text": "在 Indo Teknik 担任技术负责人期间，我负责项目规划、团队协调和产品开发。在 MSIG Life、GMS Church 与 Lion Parcel 的工作，也让我深入了解保险、社区组织和物流的运营。",
+        "source": "profile",
+        "brands": [
+          "indoteknik",
+          "msig",
+          "gms",
+          "lion"
+        ]
+      },
+      {
+        "period": "2026",
+        "title": "承担新的管理职责",
+        "organization": "ZÉRA · Aracita Group · PT Yuk Inovasi Digital",
+        "text": "在继续管理 Sliva 和 SlivaDoc 的同时，我出任 ZÉRA 与 Aracita Group 首席执行官，以及 PT Yuk Inovasi Digital 首席技术官。",
+        "source": "profile",
+        "brands": [
+          "zera",
+          "aracita",
+          "yuk"
+        ]
+      }
+    ],
+    "previous": "曾任职于",
+    "timelineLink": "查看时间线",
+    "timelineTitle": "2017 年至今的职业历程",
+    "current": "现任职务",
+    "roles": { "lion": "全栈开发工程师", "gms": "IT 项目经理 · 前端开发工程师", "msig": "前端开发工程师 · UI/UX 设计师", "indoteknik": "技术负责人", "indomobil": "高级软件工程师", "creo": "区块链专家" }
   },
   "ventures": {
     "label": "事业与管理",
-    "heading": "我管理的企业与团队。",
-    "intro": "我的工作涵盖企业创建、产品开发，以及围绕业务需求制定技术决策。",
+    "heading": "我管理的企业。",
+    "intro": "在科技、动物医疗和活动策划等领域担任五项管理职务。",
     "current": "现任职务",
     "entries": [
-      { "name": "Sliva Technology Indonesia", "mark": "S", "role": "创始人兼首席执行官", "period": "自 2022 年 3 月", "field": "科技企业", "text": "我创立 PT Sliva Technology Indonesia，致力于围绕业务需求开发数字解决方案。作为首席执行官，我负责公司方向和产品发展。", "source": "sliva" },
-      { "name": "SlivaDoc", "mark": "Sd", "role": "首席执行官", "period": "自 2023 年 1 月", "field": "动物医疗科技", "text": "SlivaDoc 为动物诊所和宠物店提供数字化工具，帮助它们管理动物健康记录和日常服务流程。", "source": "slivadoc" },
-      { "name": "Aracita Group", "mark": "A", "role": "首席执行官", "period": "自 2026 年 4 月", "field": "活动与创意产业", "text": "Aracita 提供活动策划、统筹与执行服务，涵盖企业活动、品牌推广和婚礼。", "source": "aracita" },
-      { "name": "ZÉRA", "mark": "Z", "role": "首席执行官", "period": "自 2026 年 3 月", "field": "企业管理", "text": "我于 2026 年出任 ZÉRA 首席执行官，这是我当年开始承担的管理职责之一。", "source": "profile" },
-      { "name": "PT Yuk Inovasi Digital", "mark": "Y", "role": "首席技术官", "period": "自 2026 年 6 月", "field": "技术管理", "text": "作为首席技术官，我关注公司的技术发展方向，以及技术如何服务于业务需求。", "source": "profile" }
+      { "role": "创始人兼首席执行官", "period": "自 2022 年 3 月", "field": "科技企业", "text": "我创立 PT Sliva Technology Indonesia，致力于围绕业务需求开发数字解决方案。作为首席执行官，我负责公司方向和产品发展。", "source": "sliva", "brand": "sliva" },
+      { "role": "首席执行官", "period": "自 2023 年 1 月", "field": "动物医疗科技", "text": "SlivaDoc 为动物诊所和宠物店提供数字化工具，帮助它们管理动物健康记录和日常服务流程。", "source": "slivadoc", "brand": "slivadoc" },
+      { "role": "首席执行官", "period": "自 2026 年 4 月", "field": "活动与创意产业", "text": "Aracita 提供活动策划、统筹与执行服务，涵盖企业活动、品牌推广和婚礼。", "source": "aracita", "brand": "aracita" },
+      { "role": "首席执行官", "period": "自 2026 年 3 月", "field": "企业管理", "text": "我于 2026 年出任 ZÉRA 首席执行官，这是我当年开始承担的管理职责之一。", "source": "profile", "brand": "zera" },
+      { "role": "首席技术官", "period": "自 2026 年 6 月", "field": "技术管理", "text": "作为首席技术官，我关注公司的技术发展方向，以及技术如何服务于业务需求。", "source": "profile", "brand": "yuk" }
     ],
-    "workLabel": "跨行业经历",
-    "workTitle": "这些行业经历塑造了我的工作方式。",
+    "workTitle": "跨行业经历",
     "work": [
-      { "name": "Indo Teknik", "field": "制造与贸易", "text": "负责技术管理，带领团队开发柴油机配件交易平台。", "source": "work" },
-      { "name": "MSIG Life", "field": "保险", "text": "参与数字保险产品的界面设计和开发。", "source": "profile" },
-      { "name": "Lion Parcel", "field": "物流", "text": "参与 Lion Parcel 物流配送平台的开发。", "source": "work" }
+      { "field": "制造与贸易", "text": "负责技术管理，带领团队开发柴油机配件交易平台。", "source": "work", "brand": "indoteknik" },
+      { "field": "保险", "text": "参与数字保险产品的界面设计和开发。", "source": "profile", "brand": "msig" },
+      { "field": "物流", "text": "参与 Lion Parcel 物流配送平台的开发。", "source": "work", "brand": "lion" }
     ]
   },
   "media": {
     "label": "媒体与演讲",
-    "heading": "公开活动、媒体报道与荣誉。",
-    "intro": "这里记录了我参与的公开讨论，主题包括技术、创意产业和印度尼西亚数字人才。",
-    "feature": {
-      "tag": "演讲嘉宾 · 2023 年 3 月 1 日",
-      "title": "Indonesia Website Awards & WebDevTalk 2023",
-      "text": "我在活动中分享了 Web3 可能如何影响互联网的未来。印尼通信与信息部（Kominfo）的新闻稿记录了该部门在活动上就数字人才需求所作的说明。",
-      "primary": "Exabytes 官方议程", "secondary": "Komdigi 收录的 Kominfo 新闻稿"
-    },
-    "listTitle": "更多动态",
+    "heading": "媒体、演讲与荣誉。",
+    "intro": "从分享 Web3 见解，到获得印度尼西亚全国性赛事 Forum Digital BUMN 第一名。",
+    "feature": { "tag": "演讲嘉宾 · 2023 年 3 月 1 日", "title": "Indonesia Website Awards & WebDevTalk 2023", "text": "我在活动中分享了 Web3 可能如何影响互联网的未来。印尼通信与信息部（Kominfo）的新闻稿记录了该部门在活动上就数字人才需求所作的说明。", "primary": "Exabytes 官方议程", "secondary": "Komdigi 收录的 Kominfo 新闻稿" },
+    "listTitle": "报道与荣誉",
     "entries": [
       { "date": "2023 年 4 月", "publisher": "FKK News", "tag": "媒体报道", "title": "区块链与创意产业的未来", "text": "FKK News 介绍了我作为嘉宾参与有关区块链在创意产业中应用的讨论。", "source": "fkk" },
       { "date": "2022 年 8 月", "publisher": "Exabytes Developer Club", "tag": "演讲嘉宾", "title": "Web3 去中心化与互联网的未来", "text": "在 Exabytes 的社区活动上，我探讨了去中心化以及 Web3 可能如何改变互联网的运作方式。", "source": "edc" },
@@ -87,9 +129,9 @@
   },
   "contact": {
     "label": "联系",
-    "heading": "欢迎交流。",
-    "intro": "欢迎企业管理者、产品团队及活动组织者联系我，共同探讨合作机会。",
-    "channel": "商务联系", "channelText": "欢迎通过 LinkedIn 发消息，简要介绍您的机构、希望讨论的机会，以及这次交流的目标。",
+    "heading": "欢迎探讨合作机会。",
+    "intro": "欢迎联系我，探讨商务合作、数字产品开发或演讲邀约。",
+    "channel": "在 LinkedIn 上联系",
     "topicsTitle": "合作方向",
     "topics": [
       { "title": "商务合作", "text": "探索跨行业机会，寻找能为双方创造价值的合作方式。" },

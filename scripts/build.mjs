@@ -21,6 +21,7 @@ const absolute = path => new URL(path, base).href;
 const rootHref = routePath => '../'.repeat(routePath.split('/').filter(Boolean).length) || './';
 const pathFor = (locale, page) => absolute(route(locale, page));
 const sources = site.sources;
+const brands = site.brands;
 const css = await readFile(new URL('public/assets/site.css', root));
 const stylesheet = 'site.' + createHash('sha256').update(css).digest('hex').slice(0, 10) + '.css';
 const svg = (paths, cls = '') => '<svg class="' + cls + '" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round">' + paths + '</svg>';
@@ -28,6 +29,9 @@ const arrow = svg('<path d="M4 12h15m-6-6 6 6-6 6"/>');
 const diagonal = svg('<path d="M6 18 18 6M8 6h10v10"/>');
 const globe = svg('<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/>');
 const pin = svg('<path d="M19 10c0 5-7 10-7 10s-7-5-7-10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/>');
+const trophy = svg('<path d="M8 21h8m-4-4v4M7 4h10v7a5 5 0 0 1-10 0V4Zm0 2H4v2a4 4 0 0 0 3 4m10-6h3v2a4 4 0 0 1-3 4"/>');
+const flag = svg('<path d="M5 21V4m0 1c6-5 8 5 14 0v10c-6 5-8-5-14 0"/>');
+const chevron = svg('<path d="m6 9 6 6 6-6"/>');
 const icons = [
   svg('<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="M12 12 21 3m-5 0h5v5"/>'),
   svg('<path d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5"/>'),
@@ -68,12 +72,24 @@ function cta(c) {
   return `<section class="site-cta"><div class="wrap cta-inner"><div>${label(a.label)}<h2>${escape(a.title)}</h2><p>${escape(a.text)}</p></div>${button(a.link,c.to('contact'),'light')}</div></section>`;
 }
 
-function pageIntro(data) {
-  return `<section class="page-intro"><div class="wrap intro-inner">${label(data.label)}<h1>${escape(data.heading)}</h1><p>${escape(data.intro)}</p></div></section>`;
+function brandMark(c, id) {
+  const brand = brands[id];
+  const mark = brand.logo
+    ? `<img src="${c.asset('brands/'+brand.logo)}" width="48" height="48" alt="" decoding="async">`
+    : escape(brand.monogram);
+  return `<span class="brand-mark" aria-hidden="true">${mark}</span>`;
 }
 
-function next(c, pages) {
-  return `<div class="wrap next-row">${label(c.ui.next)}<div>${pages.map(p => link(c.d.pages[p].label,c.to(p))).join('')}</div></div>`;
+function roleLink(c, item, index) {
+  return `<a class="role-link" href="${c.to('ventures')}#role-${index+1}">
+    ${brandMark(c,item.brand)}<span><strong>${escape(brands[item.brand].name)}</strong><small>${escape(item.role)}</small></span>
+  </a>`;
+}
+
+function pageIntro(data) {
+  return `<section class="page-intro"><div class="wrap intro-inner">
+    ${label(data.label)}<h1>${escape(data.heading)}</h1><p>${escape(data.intro)}</p>
+  </div></section>`;
 }
 
 function home(c) {
@@ -81,72 +97,114 @@ function home(c) {
   const h = d.home;
   return `<section class="hero-shell" aria-labelledby="name"><div class="wrap hero">
   <div class="hero-copy">
-    <p class="hero-kicker">${pin}${escape(ui.location)}</p>
+    <p class="hero-kicker">${escape(h.role)}</p>
     <h1 id="name">Evans Moris <span>Cheahn</span></h1>
-    <p class="hero-role">${escape(h.role)}</p>
     <p class="hero-description">${escape(h.intro)}</p>
     <div class="actions">${button(h.primary,to('journey'))}${button(h.secondary,to('contact'),'secondary',diagonal)}</div>
   </div>
-  <div class="portrait">
+  <figure class="portrait">
     <img width="400" height="400" src="${asset('evans-moris-cheahn-profile.webp')}" fetchpriority="high" alt="${escape(ui.portraitAlt)}">
-  </div>
+    <figcaption>${pin}${escape(ui.location)}</figcaption>
+  </figure>
 </div></section>
-<div class="role-band"><div class="wrap role-inner">
-  ${label(h.rolesLabel)}
-  <ul>${d.ventures.entries.map((v,i) => `<li><a href="${to('ventures')}#role-${i+1}">${escape(v.name)}</a></li>`).join('')}</ul>
-</div></div>
+<section class="wrap home-proof" aria-labelledby="leading">
+  <h2 class="eyebrow" id="leading">${escape(h.rolesLabel)}</h2>
+  <ul class="role-grid">${d.ventures.entries.map((item,i) => `<li>${roleLink(c,item,i)}</li>`).join('')}</ul>
+  <div class="highlight-grid">
+    <a class="highlight-card" href="${to('journey')}">${flag}<div>
+      <span>${escape(d.pages.journey.label)}</span><strong>${escape(h.careerTitle)}</strong>
+    </div>${arrow}</a>
+    <a class="highlight-card highlight-award" href="${to('media')}#recognition">${trophy}<div>
+      <span>${escape(h.awardDetail)}</span><strong>${escape(h.awardTitle)}</strong>
+    </div>${arrow}</a>
+  </div>
+</section>
 <section class="wrap section focus">
-  <div class="section-heading">${label(h.focusLabel)}<h2>${escape(h.focusTitle)}</h2><p>${escape(h.focusIntro)}</p></div>
+  <div class="section-heading">${label(h.focusLabel)}<h2>${escape(h.focusTitle)}</h2></div>
   <div class="tile-grid">${h.focus.map((f,i) => `<article class="tile"><span class="tile-icon">${icons[i]}</span><h3>${escape(f.title)}</h3><p>${escape(f.text)}</p></article>`).join('')}</div>
 </section>
-<section class="career-strip"><div class="wrap section">
-  <div class="section-heading split"><div>${label(h.careerLabel)}<h2>${escape(h.careerTitle)}</h2></div>${link(h.careerLink,to('journey'))}</div>
-  <ol class="milestones">${h.milestones.map(m => `<li><time datetime="${m.year}">${m.year}</time><h3>${escape(m.title)}</h3><p>${escape(m.text)}</p></li>`).join('')}</ol>
-</div></section>
-<section class="wrap section feature">
+<div class="career-strip"><section class="wrap section feature">
   <div class="feature-graphic"><img src="${asset('webdevtalk-2023.webp')}" width="900" height="473" alt="" loading="lazy" decoding="async"></div>
-  <div>${label(h.featureLabel)}<h2>${escape(h.featureTitle)}</h2><p>${escape(h.featureText)}</p>${link(h.featureLink,to('media'))}</div>
-</section>${cta(c)}`;
+  <div>${label(h.featureLabel)}<h2>${escape(h.featureTitle)}</h2>${link(d.pages.media.label,to('media'))}</div>
+</section></div>${cta(c)}`;
 }
 
 function journey(c) {
   const j = c.d.journey;
-  return pageIntro(j)+`<section class="wrap section timeline-section" aria-label="${escape(c.d.pages.journey.label)}">
-  <ol class="timeline">${j.entries.map(item => `<li><div class="timeline-period">${escape(item.period)}</div><article><p class="organization">${escape(item.organization)}</p><h2>${escape(item.title)}</h2><p>${escape(item.text)}</p>${sourceLink(c.ui.source,item.source,item.title)}</article></li>`).join('')}</ol>
-</section>${next(c,['ventures','media'])}${cta(c)}`;
+  const past = site.pastExperience.map(({brand, period}) => `<li class="experience-card">
+    ${brandMark(c,brand)}<div><h3>${escape(brands[brand].name)}</h3><p>${escape(j.roles[brand])}</p><span>${escape(period)}</span></div>
+  </li>`).join('');
+  return pageIntro(j)+`
+<section class="wrap section experience-section" aria-labelledby="experience">
+  <div class="section-heading split"><h2 id="experience">${escape(j.previous)}</h2>${link(j.timelineLink,'#timeline',chevron)}</div>
+  <ul class="experience-grid">${past}</ul>
+</section>
+<section class="career-strip"><div class="wrap section active-roles">
+  <h2>${escape(j.current)}</h2>
+  <ul class="role-grid">${c.d.ventures.entries.map((item,i) => `<li>${roleLink(c,item,i)}</li>`).join('')}</ul>
+</div></section>
+<section class="wrap section timeline-section" id="timeline" aria-labelledby="timeline-heading">
+  <h2 id="timeline-heading">${escape(j.timelineTitle)}</h2>
+  <ol class="timeline">${j.entries.map(item => `<li>
+    <span class="timeline-period">${escape(item.period)}</span>
+    <details>
+      <summary><span><strong>${escape(item.title)}</strong><small>${escape(item.organization)}</small></span>${chevron}</summary>
+      <div class="timeline-detail">
+        ${item.brands ? `<div class="timeline-brands">${item.brands.map(id => brandMark(c,id)).join('')}</div>` : ''}
+        <p>${escape(item.text)}</p>${sourceLink(c.ui.source,item.source,item.title)}
+      </div>
+    </details>
+  </li>`).join('')}</ol>
+</section>${cta(c)}`;
 }
 
 function ventures(c) {
   const v = c.d.ventures;
-  return pageIntro(v)+`<section class="wrap section venture-list" aria-labelledby="current-roles"><h2 id="current-roles" class="eyebrow">${escape(v.current)}</h2>
-  <div>${v.entries.map((item,i) => `<article class="venture-row" id="role-${i+1}">
-    <div class="venture-identity"><span class="venture-mark mark-${i+1}" aria-hidden="true">${escape(item.mark)}</span><div><p class="organization">${escape(item.field)}</p><h3>${escape(item.name)}</h3><p class="role-date">${escape(item.role)} · ${escape(item.period)}</p></div></div>
-    <div class="venture-detail"><p>${escape(item.text)}</p>${sourceLink(c.ui.source,item.source,item.name)}</div>
+  return pageIntro(v)+`<section class="wrap section venture-list" aria-labelledby="current-roles">
+  <h2 id="current-roles" class="eyebrow">${escape(v.current)}</h2>
+  <div class="venture-grid">${v.entries.map((item,i) => `<article class="venture-card" id="role-${i+1}">
+    <div class="venture-top">${brandMark(c,item.brand)}<span class="venture-role">${escape(item.role)}</span></div>
+    <h3>${escape(brands[item.brand].name)}</h3>
+    <p class="venture-meta">${escape(item.field)} · ${escape(item.period)}</p>
+    <p class="venture-description">${escape(item.text)}</p>
+    ${sourceLink(c.ui.source,item.source,brands[item.brand].name)}
   </article>`).join('')}</div></section>
 <section class="career-strip"><div class="wrap section">
-  <div class="section-heading">${label(v.workLabel)}<h2>${escape(v.workTitle)}</h2></div>
-  <div class="tile-grid">${v.work.map(item => `<article class="tile"><p class="organization">${escape(item.field)}</p><h3>${escape(item.name)}</h3><p>${escape(item.text)}</p>${sourceLink(c.ui.source,item.source,item.name)}</article>`).join('')}</div>
+  <div class="section-heading split"><h2>${escape(v.workTitle)}</h2>${link(c.d.pages.journey.label,c.to('journey')+'#experience')}</div>
+  <div class="tile-grid">${v.work.map(item => `<article class="tile work-tile">
+    ${brandMark(c,item.brand)}<h3>${escape(brands[item.brand].name)}</h3><p class="organization">${escape(item.field)}</p>
+    <p>${escape(item.text)}</p>${sourceLink(c.ui.source,item.source,brands[item.brand].name)}
+  </article>`).join('')}</div>
 </div></section>${cta(c)}`;
 }
 
 function media(c) {
   const m = c.d.media;
-  return pageIntro(m)+`<section class="wrap section">
+  return pageIntro(m)+`<section class="wrap section media-section">
   <article class="media-feature"><div class="media-copy">${label(m.feature.tag)}<h2>${escape(m.feature.title)}</h2><p>${escape(m.feature.text)}</p>
-    <div class="media-links">${external(m.feature.primary,'iwa')}${external(m.feature.secondary,'komdigi')}</div></div>
-    <div class="media-art"><img width="900" height="473" src="${c.asset('webdevtalk-2023.webp')}" alt="" decoding="async"><a href="${escape(sources.iwa)}">Exabytes · WebDevTalk 2023 ${diagonal}</a></div>
+    <div class="media-links">${button(m.feature.primary,sources.iwa,'primary',diagonal)}${external(m.feature.secondary,'komdigi')}</div></div>
+    <div class="media-art"><img width="900" height="473" src="${c.asset('webdevtalk-2023.webp')}" alt="" decoding="async"></div>
   </article>
   <h2 class="media-list-title">${escape(m.listTitle)}</h2>
-  <div class="media-list">${m.entries.map(item => `<article><div class="media-date"><span>${escape(item.date)}</span><span>${escape(item.tag)}</span></div><div><p class="organization">${escape(item.publisher)}</p><h3>${escape(item.title)}</h3><p>${escape(item.text)}</p>${sourceLink(c.ui.source,item.source,item.title)}</div></article>`).join('')}</div>
-</section>${next(c,['journey','contact'])}`;
+  <div class="tile-grid media-list">${m.entries.map(item => `<article class="tile media-tile"${item.source==='umri'?' id="recognition"':''}>
+    <div class="media-date"><span>${escape(item.tag)}</span><span>${escape(item.date)}</span></div>
+    <h3>${escape(item.title)}</h3><p class="organization">${escape(item.publisher)}</p>
+    <p>${escape(item.text)}</p>${sourceLink(c.ui.source,item.source,item.title)}
+  </article>`).join('')}</div>
+</section>${cta(c)}`;
 }
 
 function contact(c) {
   const a = c.d.contact;
-  return pageIntro(a)+`<section class="wrap section contact-grid">
-  <article class="contact-card">${label(c.ui.profile)}<h2>${escape(a.channel)}</h2><p>${escape(a.channelText)}</p>${button(c.ui.linkedin,site.linkedin,'primary',diagonal)}</article>
-  <div class="contact-topics"><h2>${escape(a.topicsTitle)}</h2><ul>${a.topics.map(item => `<li><h3>${escape(item.title)}</h3><p>${escape(item.text)}</p></li>`).join('')}</ul></div>
-</section>${next(c,['ventures','media'])}`;
+  return `<section class="page-intro"><div class="wrap intro-inner contact-hero">
+    <div>${label(a.label)}<h1>${escape(a.heading)}</h1><p>${escape(a.intro)}</p>
+      <div class="actions">${button(a.channel,site.linkedin,'primary',diagonal)}</div></div>
+    <img class="contact-photo" src="${c.asset('evans-moris-cheahn-profile.webp')}" width="400" height="400" alt="${escape(c.ui.portraitAlt)}">
+  </div></section>
+<section class="wrap section contact-topics">
+  <h2>${escape(a.topicsTitle)}</h2>
+  <ul class="tile-grid">${a.topics.map((item,i) => `<li class="tile"><span class="tile-icon">${icons[i]}</span><h3>${escape(item.title)}</h3><p>${escape(item.text)}</p></li>`).join('')}</ul>
+</section>`;
 }
 
 const render = { home, journey, ventures, media, contact };
