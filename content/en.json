@@ -7,7 +7,7 @@
     "contact": { "slug": "contact", "label": "Contact", "title": "Business & Collaboration Inquiries | Evans Moris Cheahn", "description": "Connect with Evans Moris Cheahn on WhatsApp for business partnerships, digital product collaboration and speaking invitations." }
   },
   "ui": {
-    "location": "Jakarta, Indonesia", "navigation": "Main navigation", "languages": "Languages", "skip": "Skip to content", "source": "View source", "portraitAlt": "Portrait of Evans Moris Cheahn", "socialAlt": "Evans Moris Cheahn — Executive Profile", "footer": "Technology entrepreneur & business leader", "top": "Back to top"
+    "location": "Jakarta, Indonesia", "navigation": "Main navigation", "languages": "Languages", "skip": "Skip to content", "source": "View source", "website": "Visit website", "linkedinProfile": "View LinkedIn profile", "portraitAlt": "Portrait of Evans Moris Cheahn", "socialAlt": "Evans Moris Cheahn — Executive Profile", "footer": "Technology entrepreneur & business leader", "top": "Back to top"
   },
   "home": {
     "role": "Technology entrepreneur · CEO & CTO",
@@ -101,17 +101,17 @@
     "intro": "Five executive roles spanning technology, animal health, and events.",
     "current": "Current roles",
     "entries": [
-      { "role": "Founder & CEO", "period": "Since March 2022", "field": "Technology business", "text": "I founded PT Sliva Technology Indonesia to develop digital solutions around business needs. As CEO, I lead the company’s direction and product development.", "source": "sliva", "brand": "sliva" },
-      { "role": "CEO", "period": "Since January 2023", "field": "Animal health technology", "text": "SlivaDoc helps veterinary clinics and pet shops digitize their operations, from animal health records to day-to-day service workflows.", "source": "slivadoc", "brand": "slivadoc" },
-      { "role": "CEO", "period": "Since April 2026", "field": "Events & creative industries", "text": "Aracita plans, coordinates, and produces events, from corporate programs and brand activations to weddings.", "source": "aracita", "brand": "aracita" },
-      { "role": "CEO", "period": "Since March 2026", "field": "Business leadership", "text": "I serve as CEO of ZÉRA, one of the business leadership roles I took on in 2026.", "source": "profile", "brand": "zera" },
-      { "role": "CTO", "period": "Since June 2026", "field": "Technology leadership", "text": "As CTO, I focus on the company’s technology direction and how it serves business needs.", "source": "profile", "brand": "yuk" }
+      { "role": "Founder & CEO", "period": "Since March 2022", "field": "Technology business", "text": "I founded PT Sliva Technology Indonesia to develop digital solutions around business needs. As CEO, I lead the company’s direction and product development.", "brand": "sliva" },
+      { "role": "CEO", "period": "Since January 2023", "field": "Animal health technology", "text": "SlivaDoc helps veterinary clinics and pet shops digitize their operations, from animal health records to day-to-day service workflows.", "brand": "slivadoc" },
+      { "role": "CEO", "period": "Since April 2026", "field": "Events & creative industries", "text": "Aracita plans, coordinates, and produces events, from corporate programs and brand activations to weddings.", "brand": "aracita" },
+      { "role": "CEO", "period": "Since March 2026", "field": "Business leadership", "text": "I serve as CEO of ZÉRA, one of the business leadership roles I took on in 2026.", "brand": "zera" },
+      { "role": "CTO", "period": "Since June 2026", "field": "Technology leadership", "text": "As CTO, I focus on the company’s technology direction and how it serves business needs.", "brand": "yuk" }
     ],
     "workTitle": "Cross-industry experience",
     "work": [
-      { "field": "Manufacturing & commerce", "text": "Led technology and platform development for a diesel parts marketplace.", "source": "work", "brand": "indoteknik" },
-      { "field": "Insurance", "text": "Contributed to interface design and development for digital insurance products.", "source": "profile", "brand": "msig" },
-      { "field": "Logistics", "text": "Contributed to the development of the Lion Parcel delivery platform.", "source": "work", "brand": "lion" }
+      { "field": "Manufacturing & commerce", "text": "Led technology and platform development for a diesel parts marketplace.", "brand": "indoteknik" },
+      { "field": "Insurance", "text": "Contributed to interface design and development for digital insurance products.", "brand": "msig" },
+      { "field": "Logistics", "text": "Contributed to the development of the Lion Parcel delivery platform.", "brand": "lion" }
     ]
   },
   "media": {

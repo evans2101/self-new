@@ -7,7 +7,7 @@
     "contact": { "slug": "contact", "label": "联系", "title": "商务合作与联系｜Evans Moris Cheahn", "description": "通过 WhatsApp 联系 Evans Moris Cheahn，探讨商务合作、数字产品开发或演讲邀约。" }
   },
   "ui": {
-    "location": "印度尼西亚 · 雅加达", "navigation": "主导航", "languages": "语言选择", "skip": "跳转到正文", "source": "查看来源", "portraitAlt": "Evans Moris Cheahn 的肖像", "socialAlt": "Evans Moris Cheahn 管理者档案", "footer": "科技创业者与企业管理者", "top": "返回顶部"
+    "location": "印度尼西亚 · 雅加达", "navigation": "主导航", "languages": "语言选择", "skip": "跳转到正文", "source": "查看来源", "website": "访问网站", "linkedinProfile": "查看 LinkedIn 个人资料", "portraitAlt": "Evans Moris Cheahn 的肖像", "socialAlt": "Evans Moris Cheahn 管理者档案", "footer": "科技创业者与企业管理者", "top": "返回顶部"
   },
   "home": {
     "role": "科技创业者 · CEO 兼 CTO",
@@ -101,17 +101,17 @@
     "intro": "在科技、动物医疗和活动策划等领域担任五项管理职务。",
     "current": "现任职务",
     "entries": [
-      { "role": "创始人兼首席执行官", "period": "自 2022 年 3 月", "field": "科技企业", "text": "我创立 PT Sliva Technology Indonesia，致力于围绕业务需求开发数字解决方案。作为首席执行官，我负责公司方向和产品发展。", "source": "sliva", "brand": "sliva" },
-      { "role": "首席执行官", "period": "自 2023 年 1 月", "field": "动物医疗科技", "text": "SlivaDoc 为动物诊所和宠物店提供数字化工具，帮助它们管理动物健康记录和日常服务流程。", "source": "slivadoc", "brand": "slivadoc" },
-      { "role": "首席执行官", "period": "自 2026 年 4 月", "field": "活动与创意产业", "text": "Aracita 提供活动策划、统筹与执行服务，涵盖企业活动、品牌推广和婚礼。", "source": "aracita", "brand": "aracita" },
-      { "role": "首席执行官", "period": "自 2026 年 3 月", "field": "企业管理", "text": "我于 2026 年出任 ZÉRA 首席执行官，这是我当年开始承担的管理职责之一。", "source": "profile", "brand": "zera" },
-      { "role": "首席技术官", "period": "自 2026 年 6 月", "field": "技术管理", "text": "作为首席技术官，我关注公司的技术发展方向，以及技术如何服务于业务需求。", "source": "profile", "brand": "yuk" }
+      { "role": "创始人兼首席执行官", "period": "自 2022 年 3 月", "field": "科技企业", "text": "我创立 PT Sliva Technology Indonesia，致力于围绕业务需求开发数字解决方案。作为首席执行官，我负责公司方向和产品发展。", "brand": "sliva" },
+      { "role": "首席执行官", "period": "自 2023 年 1 月", "field": "动物医疗科技", "text": "SlivaDoc 为动物诊所和宠物店提供数字化工具，帮助它们管理动物健康记录和日常服务流程。", "brand": "slivadoc" },
+      { "role": "首席执行官", "period": "自 2026 年 4 月", "field": "活动与创意产业", "text": "Aracita 提供活动策划、统筹与执行服务，涵盖企业活动、品牌推广和婚礼。", "brand": "aracita" },
+      { "role": "首席执行官", "period": "自 2026 年 3 月", "field": "企业管理", "text": "我于 2026 年出任 ZÉRA 首席执行官，这是我当年开始承担的管理职责之一。", "brand": "zera" },
+      { "role": "首席技术官", "period": "自 2026 年 6 月", "field": "技术管理", "text": "作为首席技术官，我关注公司的技术发展方向，以及技术如何服务于业务需求。", "brand": "yuk" }
     ],
     "workTitle": "跨行业经历",
     "work": [
-      { "field": "制造与贸易", "text": "负责技术管理，带领团队开发柴油机配件交易平台。", "source": "work", "brand": "indoteknik" },
-      { "field": "保险", "text": "参与数字保险产品的界面设计和开发。", "source": "profile", "brand": "msig" },
-      { "field": "物流", "text": "参与 Lion Parcel 物流配送平台的开发。", "source": "work", "brand": "lion" }
+      { "field": "制造与贸易", "text": "负责技术管理，带领团队开发柴油机配件交易平台。", "brand": "indoteknik" },
+      { "field": "保险", "text": "参与数字保险产品的界面设计和开发。", "brand": "msig" },
+      { "field": "物流", "text": "参与 Lion Parcel 物流配送平台的开发。", "brand": "lion" }
     ]
   },
   "media": {

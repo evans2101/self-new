@@ -7,7 +7,7 @@
     "contact": { "slug": "kontak", "label": "Kontak", "title": "Kontak Bisnis & Kolaborasi | Evans Moris Cheahn", "description": "Hubungi Evans Moris Cheahn melalui WhatsApp untuk kemitraan bisnis, kolaborasi produk digital, dan undangan sebagai pembicara." }
   },
   "ui": {
-    "location": "Jakarta, Indonesia", "navigation": "Navigasi utama", "languages": "Pilihan bahasa", "skip": "Lewati ke konten", "source": "Lihat sumber", "portraitAlt": "Potret Evans Moris Cheahn", "socialAlt": "Evans Moris Cheahn — Executive Profile", "footer": "Pengusaha teknologi & pemimpin bisnis", "top": "Kembali ke atas"
+    "location": "Jakarta, Indonesia", "navigation": "Navigasi utama", "languages": "Pilihan bahasa", "skip": "Lewati ke konten", "source": "Lihat sumber", "website": "Kunjungi situs", "linkedinProfile": "Lihat profil LinkedIn", "portraitAlt": "Potret Evans Moris Cheahn", "socialAlt": "Evans Moris Cheahn — Executive Profile", "footer": "Pengusaha teknologi & pemimpin bisnis", "top": "Kembali ke atas"
   },
   "home": {
     "role": "Pengusaha teknologi · CEO & CTO",
@@ -101,17 +101,17 @@
     "intro": "Lima peran eksekutif di bidang teknologi, kesehatan hewan, dan industri acara.",
     "current": "Peran saat ini",
     "entries": [
-      { "role": "Founder & CEO", "period": "Sejak Maret 2022", "field": "Bisnis teknologi", "text": "Saya mendirikan PT Sliva Technology Indonesia untuk mengembangkan solusi digital yang berangkat dari kebutuhan bisnis. Sebagai CEO, saya memimpin arah perusahaan dan pengembangan produknya.", "source": "sliva", "brand": "sliva" },
-      { "role": "CEO", "period": "Sejak Januari 2023", "field": "Teknologi kesehatan hewan", "text": "SlivaDoc membantu klinik hewan dan pet shop beralih ke operasional digital, termasuk pengelolaan data kesehatan hewan dan alur layanan sehari-hari.", "source": "slivadoc", "brand": "slivadoc" },
-      { "role": "CEO", "period": "Sejak April 2026", "field": "Acara & industri kreatif", "text": "Aracita menangani perencanaan, koordinasi, dan produksi acara, dari kegiatan korporat dan aktivasi merek hingga pernikahan.", "source": "aracita", "brand": "aracita" },
-      { "role": "CEO", "period": "Sejak Maret 2026", "field": "Kepemimpinan bisnis", "text": "Saya menjabat sebagai CEO ZÉRA, salah satu peran kepemimpinan bisnis yang saya ambil pada 2026.", "source": "profile", "brand": "zera" },
-      { "role": "CTO", "period": "Sejak Juni 2026", "field": "Kepemimpinan teknologi", "text": "Sebagai CTO, fokus saya adalah arah teknologi dan kaitannya dengan kebutuhan perusahaan.", "source": "profile", "brand": "yuk" }
+      { "role": "Founder & CEO", "period": "Sejak Maret 2022", "field": "Bisnis teknologi", "text": "Saya mendirikan PT Sliva Technology Indonesia untuk mengembangkan solusi digital yang berangkat dari kebutuhan bisnis. Sebagai CEO, saya memimpin arah perusahaan dan pengembangan produknya.", "brand": "sliva" },
+      { "role": "CEO", "period": "Sejak Januari 2023", "field": "Teknologi kesehatan hewan", "text": "SlivaDoc membantu klinik hewan dan pet shop beralih ke operasional digital, termasuk pengelolaan data kesehatan hewan dan alur layanan sehari-hari.", "brand": "slivadoc" },
+      { "role": "CEO", "period": "Sejak April 2026", "field": "Acara & industri kreatif", "text": "Aracita menangani perencanaan, koordinasi, dan produksi acara, dari kegiatan korporat dan aktivasi merek hingga pernikahan.", "brand": "aracita" },
+      { "role": "CEO", "period": "Sejak Maret 2026", "field": "Kepemimpinan bisnis", "text": "Saya menjabat sebagai CEO ZÉRA, salah satu peran kepemimpinan bisnis yang saya ambil pada 2026.", "brand": "zera" },
+      { "role": "CTO", "period": "Sejak Juni 2026", "field": "Kepemimpinan teknologi", "text": "Sebagai CTO, fokus saya adalah arah teknologi dan kaitannya dengan kebutuhan perusahaan.", "brand": "yuk" }
     ],
     "workTitle": "Pengalaman lintas industri",
     "work": [
-      { "field": "Manufaktur & perdagangan", "text": "Memimpin teknologi dan pengembangan platform untuk perdagangan suku cadang diesel.", "source": "work", "brand": "indoteknik" },
-      { "field": "Asuransi", "text": "Berkontribusi pada pengembangan dan desain antarmuka produk digital di industri asuransi.", "source": "profile", "brand": "msig" },
-      { "field": "Logistik", "text": "Berkontribusi pada pengembangan platform pengiriman Lion Parcel.", "source": "work", "brand": "lion" }
+      { "field": "Manufaktur & perdagangan", "text": "Memimpin teknologi dan pengembangan platform untuk perdagangan suku cadang diesel.", "brand": "indoteknik" },
+      { "field": "Asuransi", "text": "Berkontribusi pada pengembangan dan desain antarmuka produk digital di industri asuransi.", "brand": "msig" },
+      { "field": "Logistik", "text": "Berkontribusi pada pengembangan platform pengiriman Lion Parcel.", "brand": "lion" }
     ]
   },
   "media": {

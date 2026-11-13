@@ -43,7 +43,8 @@ const icons = [
 const button = (label, href, className = 'primary', icon = arrow) => '<a class="button '+className+'" href="'+escape(href)+'">'+escape(label)+icon+'</a>';
 const link = (label, href, icon = arrow) => '<a class="text-link" href="'+escape(href)+'">'+escape(label)+icon+'</a>';
 const external = (label, source) => link(label, sources[source], diagonal);
-const sourceLink = (label, source, context) => '<a class="text-link" href="'+escape(sources[source])+'" aria-label="'+escape(label+': '+context)+'">'+escape(label)+diagonal+'</a>';
+const contextLink = (label, href, context) => '<a class="text-link" href="'+escape(href)+'" aria-label="'+escape(label+': '+context)+'">'+escape(label)+diagonal+'</a>';
+const sourceLink = (label, source, context) => contextLink(label, sources[source], context);
 const label = value => '<p class="eyebrow">'+escape(value)+'</p>';
 const wordmark = (href, footer = false) => '<a href="'+escape(href)+'" class="wordmark'+(footer?' footer-brand':'')+'"><span class="monogram" aria-hidden="true">EM<span>.</span></span><span>'+siteName+'</span></a>';
 
@@ -87,6 +88,13 @@ function roleLink(c, item, index) {
   return `<a class="role-link" href="${c.to('ventures')}#role-${index+1}">
     ${brandMark(c,item.brand)}<span><strong>${escape(brands[item.brand].name)}</strong><small>${escape(item.role)}</small></span>
   </a>`;
+}
+
+function brandLink(c, id) {
+  const { name, website } = brands[id];
+  return website
+    ? contextLink(c.ui.website, website, name)
+    : contextLink(c.ui.linkedinProfile, sources.profile, name);
 }
 
 function pageIntro(data) {
@@ -170,13 +178,13 @@ function ventures(c) {
     <h3>${escape(brands[item.brand].name)}</h3>
     <p class="venture-meta">${escape(item.field)} · ${escape(item.period)}</p>
     <p class="venture-description">${escape(item.text)}</p>
-    ${sourceLink(c.ui.source,item.source,brands[item.brand].name)}
+    ${brandLink(c,item.brand)}
   </article>`).join('')}</div></section>
 <section class="career-strip"><div class="wrap section">
   <div class="section-heading split"><h2>${escape(v.workTitle)}</h2>${link(c.d.pages.journey.label,c.to('journey')+'#experience')}</div>
   <div class="tile-grid">${v.work.map(item => `<article class="tile work-tile">
     ${brandMark(c,item.brand)}<h3>${escape(brands[item.brand].name)}</h3><p class="organization">${escape(item.field)}</p>
-    <p>${escape(item.text)}</p>${sourceLink(c.ui.source,item.source,brands[item.brand].name)}
+    <p>${escape(item.text)}</p>${brandLink(c,item.brand)}
   </article>`).join('')}</div>
 </div></section>${cta(c)}`;
 }
