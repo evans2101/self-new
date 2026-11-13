@@ -16,7 +16,10 @@ if (!base.pathname.endsWith('/')) base.pathname += '/';
 const siteName = site.name;
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const jsonLd = value => JSON.stringify(value).replaceAll('<','\\u003c');
-const route = (locale, page) => site.locales[locale].path + (dictionaries[locale].pages[page].slug ? dictionaries[locale].pages[page].slug + '/' : '');
+function route(locale, page) {
+  const { path, homePath } = site.locales[locale];
+  return page === 'home' ? homePath ?? path : path + dictionaries[locale].pages[page].slug + '/';
+}
 const absolute = path => new URL(path, base).href;
 const rootHref = routePath => '../'.repeat(routePath.split('/').filter(Boolean).length) || './';
 const pathFor = (locale, page) => absolute(route(locale, page));
@@ -64,12 +67,12 @@ function header(c) {
 
 function footer(c) {
   return `<footer class="site-footer"><div class="wrap footer-inner"><div>${wordmark(c.to('home'),true)}<p>${escape(c.ui.footer)}</p></div>
-    <div class="footer-links">${link('LinkedIn',site.linkedin,diagonal)} ${link(c.ui.top,'#top',svg('<path d="M12 20V4m-6 6 6-6 6 6"/>'))}</div></div></footer>`;
+    <div class="footer-links">${link('WhatsApp',site.whatsapp,diagonal)} ${link(c.ui.top,'#top',svg('<path d="M12 20V4m-6 6 6-6 6 6"/>'))}</div></div></footer>`;
 }
 
 function cta(c) {
   const a = c.d.cta;
-  return `<section class="site-cta"><div class="wrap cta-inner"><div>${label(a.label)}<h2>${escape(a.title)}</h2><p>${escape(a.text)}</p></div>${button(a.link,c.to('contact'),'light')}</div></section>`;
+  return `<section class="site-cta"><div class="wrap cta-inner"><div>${label(a.label)}<h2>${escape(a.title)}</h2><p>${escape(a.text)}</p></div>${button(c.d.contact.channel,site.whatsapp,'light',diagonal)}</div></section>`;
 }
 
 function brandMark(c, id) {
@@ -100,7 +103,7 @@ function home(c) {
     <p class="hero-kicker">${escape(h.role)}</p>
     <h1 id="name">Evans Moris <span>Cheahn</span></h1>
     <p class="hero-description">${escape(h.intro)}</p>
-    <div class="actions">${button(h.primary,to('journey'))}${button(h.secondary,to('contact'),'secondary',diagonal)}</div>
+    <div class="actions">${button(h.primary,to('journey'))}${button(d.contact.channel,site.whatsapp,'secondary',diagonal)}</div>
   </div>
   <figure class="portrait">
     <img width="400" height="400" src="${asset('evans-moris-cheahn-profile.webp')}" fetchpriority="high" alt="${escape(ui.portraitAlt)}">
@@ -198,7 +201,7 @@ function contact(c) {
   const a = c.d.contact;
   return `<section class="page-intro"><div class="wrap intro-inner contact-hero">
     <div>${label(a.label)}<h1>${escape(a.heading)}</h1><p>${escape(a.intro)}</p>
-      <div class="actions">${button(a.channel,site.linkedin,'primary',diagonal)}</div></div>
+      <div class="actions">${button(a.channel,site.whatsapp,'primary',diagonal)}</div></div>
     <img class="contact-photo" src="${c.asset('evans-moris-cheahn-profile.webp')}" width="400" height="400" alt="${escape(c.ui.portraitAlt)}">
   </div></section>
 <section class="wrap section contact-topics">
@@ -209,7 +212,7 @@ function contact(c) {
 
 const render = { home, journey, ventures, media, contact };
 function structured(c, meta, canonical) {
-  const person = { '@type': 'Person', '@id': absolute('#evans-moris-cheahn'), name: siteName, url: base.href, image: absolute('assets/evans-moris-cheahn-profile.webp'), sameAs: [site.linkedin], jobTitle: c.ui.footer };
+  const person = { '@type': 'Person', '@id': absolute('#evans-moris-cheahn'), name: siteName, url: base.href, image: absolute('assets/evans-moris-cheahn-profile.webp'), sameAs: [sources.profile], jobTitle: c.ui.footer };
   const webSite = { '@type':'WebSite', '@id': absolute('#website'), url: base.href, name: siteName, inLanguage: locales };
   const profile = { '@type': c.page === 'home' ? 'ProfilePage' : c.page === 'contact' ? 'ContactPage' : 'WebPage', '@id': canonical+'#page', url: canonical, name: meta.title, description: meta.description, inLanguage: c.locale, isPartOf: { '@id':webSite['@id'] }, [c.page==='home'?'mainEntity':'about']: { '@id':person['@id'] } };
   const graph = [person,webSite,profile];
@@ -289,6 +292,19 @@ for (const locale of locales) for (const page of pages) {
   await writeFile(new URL('index.html',dir),document(context(locale,page)));
   urls.push(pathFor(locale,page));
 }
+// GitHub Pages serves files directly, so the old English home needs an HTML redirect.
+const englishHome = escape(pathFor('en','home'));
+await writeFile(new URL('en/index.html',output),`<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>${escape(dictionaries.en.pages.home.title)}</title>
+<link rel="canonical" href="${englishHome}">
+<meta http-equiv="refresh" content="0; url=../">
+</head>
+<body><a href="../">Go to the English homepage</a></body>
+</html>
+`);
 const notFound = document(context(site.defaultLocale,null,true),true);
 // A 404 can be served for any depth, so its links must be relative to the site's base path.
 await writeFile(new URL('404.html',output),notFound);

@@ -4,7 +4,7 @@
     "journey": { "slug": "karier", "label": "Karier", "title": "Perjalanan Karier Evans Moris Cheahn | Dari IT Support ke CEO", "description": "Perjalanan Evans Moris Cheahn sejak bekerja di IT support pada 2017, mendirikan Sliva Technology Indonesia, hingga memimpin bisnis sebagai CEO dan CTO." },
     "ventures": { "slug": "bisnis", "label": "Bisnis", "title": "Bisnis & Kepemimpinan | Evans Moris Cheahn", "description": "Peran Evans Moris Cheahn di Sliva Technology Indonesia, SlivaDoc, Aracita Group, ZÉRA, dan PT Yuk Inovasi Digital." },
     "media": { "slug": "media", "label": "Media", "title": "Media, Pembicara & Penghargaan | Evans Moris Cheahn", "description": "Penampilan Evans Moris Cheahn di WebDevTalk, Exabytes Developer Club, dan FKK News, serta penghargaan Forum Digital BUMN 2022." },
-    "contact": { "slug": "kontak", "label": "Kontak", "title": "Kontak Bisnis & Kolaborasi | Evans Moris Cheahn", "description": "Hubungi Evans Moris Cheahn melalui LinkedIn untuk kemitraan bisnis, kolaborasi produk digital, dan undangan sebagai pembicara." }
+    "contact": { "slug": "kontak", "label": "Kontak", "title": "Kontak Bisnis & Kolaborasi | Evans Moris Cheahn", "description": "Hubungi Evans Moris Cheahn melalui WhatsApp untuk kemitraan bisnis, kolaborasi produk digital, dan undangan sebagai pembicara." }
   },
   "ui": {
     "location": "Jakarta, Indonesia", "navigation": "Navigasi utama", "languages": "Pilihan bahasa", "skip": "Lewati ke konten", "source": "Lihat sumber", "portraitAlt": "Potret Evans Moris Cheahn", "socialAlt": "Evans Moris Cheahn — Executive Profile", "footer": "Pengusaha teknologi & pemimpin bisnis", "top": "Kembali ke atas"
@@ -13,7 +13,6 @@
     "role": "Pengusaha teknologi · CEO & CTO",
     "intro": "Saya mendirikan Sliva dan memimpin tim yang membangun produk digital untuk bisnis dan layanan kesehatan hewan.",
     "primary": "Lihat karier",
-    "secondary": "Mari kolaborasi",
     "rolesLabel": "Memimpin di",
     "focusLabel": "CARA SAYA BEKERJA",
     "focusTitle": "Dari peluang pasar ke produk yang berguna.",
@@ -131,7 +130,7 @@
     "label": "KONTAK",
     "heading": "Mari bahas peluang bersama.",
     "intro": "Saya terbuka untuk kemitraan bisnis, kolaborasi produk digital, dan undangan sebagai pembicara.",
-    "channel": "Terhubung lewat LinkedIn",
+    "channel": "Hubungi via WhatsApp",
     "topicsTitle": "Topik kolaborasi",
     "topics": [
       { "title": "Kemitraan bisnis", "text": "Menjajaki peluang lintas industri dan bentuk kerja sama yang bermanfaat bagi kedua pihak." },
@@ -139,6 +138,6 @@
       { "title": "Acara & media", "text": "Undangan untuk berbicara tentang kewirausahaan, kepemimpinan teknologi, atau ekosistem digital Indonesia." }
     ]
   },
-  "cta": { "label": "KOLABORASI", "title": "Ada peluang untuk dibahas bersama?", "text": "Mari berbicara tentang kemitraan, pengembangan produk, atau undangan sebagai pembicara.", "link": "Mulai percakapan" },
+  "cta": { "label": "KOLABORASI", "title": "Ada peluang untuk dibahas bersama?", "text": "Mari berbicara tentang kemitraan, pengembangan produk, atau undangan sebagai pembicara." },
   "missing": { "title": "Halaman tidak ditemukan", "text": "Halaman ini mungkin telah dipindahkan. Kembali ke beranda untuk melanjutkan." }
 }

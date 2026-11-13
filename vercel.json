@@ -3,5 +3,8 @@
   "framework": null,
   "buildCommand": "npm run build && npm run check",
   "outputDirectory": "dist",
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/en/", "destination": "/", "permanent": true }
+  ]
 }

@@ -4,7 +4,7 @@
     "journey": { "slug": "journey", "label": "Journey", "title": "Evans Moris Cheahn’s Career | From IT Support to CEO", "description": "Follow Evans Moris Cheahn’s career from IT support in 2017 to founding Sliva Technology Indonesia and leading companies as CEO and CTO." },
     "ventures": { "slug": "ventures", "label": "Ventures", "title": "Ventures & Leadership | Evans Moris Cheahn", "description": "Explore Evans Moris Cheahn’s leadership roles at Sliva Technology Indonesia, SlivaDoc, Aracita Group, ZÉRA and PT Yuk Inovasi Digital." },
     "media": { "slug": "media", "label": "Media", "title": "Media, Speaking & Recognition | Evans Moris Cheahn", "description": "Explore Evans Moris Cheahn’s appearances at WebDevTalk, Exabytes Developer Club and FKK News, and his 2022 Forum Digital BUMN award." },
-    "contact": { "slug": "contact", "label": "Contact", "title": "Business & Collaboration Inquiries | Evans Moris Cheahn", "description": "Connect with Evans Moris Cheahn on LinkedIn for business partnerships, digital product collaboration and speaking invitations." }
+    "contact": { "slug": "contact", "label": "Contact", "title": "Business & Collaboration Inquiries | Evans Moris Cheahn", "description": "Connect with Evans Moris Cheahn on WhatsApp for business partnerships, digital product collaboration and speaking invitations." }
   },
   "ui": {
     "location": "Jakarta, Indonesia", "navigation": "Main navigation", "languages": "Languages", "skip": "Skip to content", "source": "View source", "portraitAlt": "Portrait of Evans Moris Cheahn", "socialAlt": "Evans Moris Cheahn — Executive Profile", "footer": "Technology entrepreneur & business leader", "top": "Back to top"
@@ -13,7 +13,6 @@
     "role": "Technology entrepreneur · CEO & CTO",
     "intro": "I founded Sliva and lead teams building digital products for businesses and animal health services.",
     "primary": "Explore my career",
-    "secondary": "Let’s collaborate",
     "rolesLabel": "Leading at",
     "focusLabel": "HOW I WORK",
     "focusTitle": "Turning market opportunities into useful products.",
@@ -131,7 +130,7 @@
     "label": "CONTACT",
     "heading": "Let’s discuss an opportunity.",
     "intro": "I’m open to business partnerships, digital product collaborations, and speaking invitations.",
-    "channel": "Connect on LinkedIn",
+    "channel": "Chat on WhatsApp",
     "topicsTitle": "Ways to collaborate",
     "topics": [
       { "title": "Business partnerships", "text": "Explore opportunities across industries and where working together could benefit both sides." },
@@ -139,6 +138,6 @@
       { "title": "Events & media", "text": "Invite me to speak about entrepreneurship, technology leadership, or Indonesia’s digital ecosystem." }
     ]
   },
-  "cta": { "label": "COLLABORATION", "title": "Have an opportunity to discuss?", "text": "Let’s talk about partnerships, product development, or speaking invitations.", "link": "Start a conversation" },
+  "cta": { "label": "COLLABORATION", "title": "Have an opportunity to discuss?", "text": "Let’s talk about partnerships, product development, or speaking invitations." },
   "missing": { "title": "Page not found", "text": "This page may have moved. Return to the homepage to continue." }
 }

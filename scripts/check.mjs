@@ -5,8 +5,9 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const out = new URL('../dist/', import.meta.url);
+const site = JSON.parse(await readFile(new URL('../content/site.json', import.meta.url),'utf8'));
 const sitemap = await readFile(new URL('sitemap.xml',out),'utf8');
-const files = (await readdir(out,{ recursive:true })).filter(name => name.endsWith('index.html'));
+const files = (await readdir(out,{ recursive:true })).filter(name => name.endsWith('index.html') && name !== 'en/index.html');
 const index = new Map();
 const labels = new Set();
 const descriptions = new Set();
@@ -27,7 +28,8 @@ for (const file of files) {
   const alternates = new Map([...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map(([,key,url]) => [key,url]));
   assert.deepEqual([...alternates.keys()].sort(), ['en','id','x-default','zh-Hans']);
   assert.equal(alternates.get(lang),canonical);
-  assert.equal(alternates.get('x-default'),alternates.get('id'));
+  assert.equal(alternates.get('x-default'),alternates.get(site.defaultLocale));
+  assert.ok(html.includes('href="'+site.whatsapp+'"'), `Missing WhatsApp link in ${file}`);
   index.set(canonical,{ file, html, lang, alternates });
   labels.add(title);
   descriptions.add(description);
@@ -35,13 +37,18 @@ for (const file of files) {
 
 assert.equal(index.size,15);
 assert.equal([...sitemap.matchAll(/<loc>/g)].length,index.size);
-const home = new URL([...index].find(([,page]) => page.file==='index.html')[0]);
+const [homeUrl, homePage] = [...index].find(([,page]) => page.file==='index.html');
+assert.equal(homePage.lang, site.defaultLocale);
+const home = new URL(homeUrl);
+const legacyHome = await readFile(new URL('en/index.html',out),'utf8');
+assert.ok(legacyHome.includes('rel="canonical" href="'+home.href+'"'));
+assert.ok(legacyHome.includes('http-equiv="refresh" content="0; url=../"'));
 assert.ok((await readFile(new URL('robots.txt',out),'utf8')).includes(new URL('sitemap.xml',home).href));
 for (const [url,{ html,file,lang,alternates }] of index) {
   for (const [otherLang,target] of alternates) {
     const other = index.get(target);
     assert.ok(other, `Missing alternate: ${target}`);
-    assert.equal(other.lang, otherLang==='x-default'?'id':otherLang);
+    assert.equal(other.lang, otherLang==='x-default'?site.defaultLocale:otherLang);
     assert.equal(other.alternates.get(lang),url,`Alternate lacks return link: ${target}`);
   }
   for (const [, href] of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
@@ -58,4 +65,5 @@ for (const [url,{ html,file,lang,alternates }] of index) {
 }
 const notFound = await readFile(new URL('404.html',out),'utf8');
 assert.ok(notFound.includes('content="noindex, follow"'));
+assert.ok(notFound.includes('<html lang="'+site.defaultLocale+'">'));
 console.log('Verified 15 static pages: local routes, anchors, metadata, hreflang, sitemap, and JSON-LD.');

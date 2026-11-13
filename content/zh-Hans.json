@@ -4,7 +4,7 @@
     "journey": { "slug": "journey", "label": "职业历程", "title": "Evans Moris Cheahn 的职业历程｜从 IT 支持到企业管理", "description": "了解 Evans Moris Cheahn 如何从 2017 年的 IT 支持岗位起步，创立 Sliva Technology Indonesia，并走向 CEO 与 CTO 的管理岗位。" },
     "ventures": { "slug": "ventures", "label": "事业版图", "title": "事业与管理｜Evans Moris Cheahn", "description": "了解 Evans Moris Cheahn 在 Sliva Technology Indonesia、SlivaDoc、Aracita Group、ZÉRA 与 PT Yuk Inovasi Digital 的管理职责。" },
     "media": { "slug": "media", "label": "媒体活动", "title": "媒体、演讲与荣誉｜Evans Moris Cheahn", "description": "了解 Evans Moris Cheahn 在 WebDevTalk、Exabytes Developer Club 与 FKK News 的公开活动，以及 2022 年 Forum Digital BUMN 获奖记录。" },
-    "contact": { "slug": "contact", "label": "联系", "title": "商务合作与联系｜Evans Moris Cheahn", "description": "通过 LinkedIn 联系 Evans Moris Cheahn，探讨商务合作、数字产品开发或演讲邀约。" }
+    "contact": { "slug": "contact", "label": "联系", "title": "商务合作与联系｜Evans Moris Cheahn", "description": "通过 WhatsApp 联系 Evans Moris Cheahn，探讨商务合作、数字产品开发或演讲邀约。" }
   },
   "ui": {
     "location": "印度尼西亚 · 雅加达", "navigation": "主导航", "languages": "语言选择", "skip": "跳转到正文", "source": "查看来源", "portraitAlt": "Evans Moris Cheahn 的肖像", "socialAlt": "Evans Moris Cheahn 管理者档案", "footer": "科技创业者与企业管理者", "top": "返回顶部"
@@ -13,7 +13,6 @@
     "role": "科技创业者 · CEO 兼 CTO",
     "intro": "我创立了 Sliva，并带领团队为企业运营和动物医疗开发数字产品。",
     "primary": "了解职业历程",
-    "secondary": "探讨合作",
     "rolesLabel": "现任职务",
     "focusLabel": "我的工作方法",
     "focusTitle": "从市场机会出发，打造实用的产品。",
@@ -131,7 +130,7 @@
     "label": "联系",
     "heading": "欢迎探讨合作机会。",
     "intro": "欢迎联系我，探讨商务合作、数字产品开发或演讲邀约。",
-    "channel": "在 LinkedIn 上联系",
+    "channel": "通过 WhatsApp 联系",
     "topicsTitle": "合作方向",
     "topics": [
       { "title": "商务合作", "text": "探索跨行业机会，寻找能为双方创造价值的合作方式。" },
@@ -139,6 +138,6 @@
       { "title": "活动与媒体", "text": "欢迎邀约分享创业、技术管理或印度尼西亚数字产业生态相关话题。" }
     ]
   },
-  "cta": { "label": "合作", "title": "有值得一起探讨的机会？", "text": "欢迎交流商务合作、产品开发或演讲邀约。", "link": "联系我" },
+  "cta": { "label": "合作", "title": "有值得一起探讨的机会？", "text": "欢迎交流商务合作、产品开发或演讲邀约。" },
   "missing": { "title": "找不到页面", "text": "此页面可能已移至其他位置。请返回首页继续浏览。" }
 }

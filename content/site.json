@@ -1,13 +1,13 @@
 {
   "name": "Evans Moris Cheahn",
   "siteUrl": "https://evans2101.github.io/self-new/",
-  "defaultLocale": "id",
+  "defaultLocale": "en",
   "locales": {
-    "id": { "label": "Bahasa Indonesia", "short": "ID", "og": "id_ID", "path": "" },
-    "en": { "label": "English", "short": "EN", "og": "en_US", "path": "en/" },
+    "id": { "label": "Bahasa Indonesia", "short": "ID", "og": "id_ID", "path": "", "homePath": "id/" },
+    "en": { "label": "English", "short": "EN", "og": "en_US", "path": "en/", "homePath": "" },
     "zh-Hans": { "label": "简体中文", "short": "中文", "og": "zh_CN", "path": "zh/" }
   },
-  "linkedin": "https://id.linkedin.com/in/evansmoris21",
+  "whatsapp": "https://wa.me/6282391239651",
   "sources": {
     "profile": "https://id.linkedin.com/in/evansmoris21",
     "komdigi": "https://www.komdigi.go.id/berita/siaran-pers/detail/siaran-pers-no-28-hm-kominfo-03-2023-tentang-kembangkan-ekonomi-digital-indonesia-butuh-talenta-digital-berkualitas",

@@ -17,7 +17,7 @@ Buka URL yang dicetak oleh perintah preview. Folder `dist/` siap diunggah ke hos
 ## Mengubah konten dan SEO
 
 - `content/id.json`, `content/en.json`, `content/zh-Hans.json`: teks, navigasi, slug, judul dan deskripsi tiap bahasa.
-- `content/site.json`: domain default, bahasa, dan daftar sumber publik.
+- `content/site.json`: domain, bahasa, tautan WhatsApp, dan daftar sumber publik. Beranda utama memakai English, dan beranda Bahasa Indonesia ada di `/id/`.
 - `public/assets/site.css`: tampilan situs, dengan font WOFF2 lokal.
 - `scripts/build.mjs`: generator HTML, canonical dan hreflang timbal balik, Open Graph, Twitter Card, JSON-LD, sitemap, robots, dan halaman 404.
 
