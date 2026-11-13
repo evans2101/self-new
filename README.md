@@ -23,6 +23,8 @@ Buka URL yang dicetak oleh perintah preview. Folder `dist/` siap diunggah ke hos
 
 Tetapkan `SITE_URL` ke URL publik beserta subpath, misalnya `SITE_URL=https://example.com/ npm run build`, jika pindah domain. Workflow GitHub Pages membaca URL publik dari pengaturan Pages. Pada GitHub Pages dengan subpath, aturan robots yang berlaku ada di akar domain; sitemap situs tetap dapat dikirim langsung melalui Search Console.
 
+Pada Vercel, `vercel.json` menetapkan folder publikasi ke `dist/`. Build menggunakan domain produksi dari `VERCEL_PROJECT_PRODUCTION_URL` untuk metadata dan sitemap, kecuali jika `SITE_URL` ditetapkan.
+
 ## Sumber dan kredit
 
 - [Profil LinkedIn Evans Moris Cheahn](https://id.linkedin.com/in/evansmoris21) untuk riwayat dan jabatan.
